@@ -1,0 +1,136 @@
+﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmPoligonos : Form
+    {
+        private double lado;
+
+        public FrmPoligonos()
+        {
+            InitializeComponent();
+            this.Paint += FrmHexagono_Paint;
+        }
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(TxtAncho.Text, out lado) || lado <= 0)
+            {
+                MessageBox.Show("Lado (a) debe ser un número válido mayor a 0");
+                return;
+            }
+
+            double perimetro = lado * 6;
+            double area = (3 * Math.Sqrt(3) / 2) * lado * lado;
+
+            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            LblArea.Text = $"Área: {area:F2}";
+
+            this.Invalidate();
+        }
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+            TxtAncho.Text = "";
+            LblPerimetro.Text = "Perímetro:";
+            LblArea.Text = "Área:";
+            lado = 0;
+            this.Invalidate();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmHexagono_Paint(object sender, PaintEventArgs e)
+        {
+            if (lado <= 0) return;
+
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+
+            RectangleF bounds = new RectangleF(560f, 80f, 420f, 360f);
+
+
+            float radius = (float)lado;
+
+
+
+            float scaledRadius = radius * 10;
+
+            PointF center = new PointF(
+                bounds.X + bounds.Width / 2,
+                bounds.Y + bounds.Height / 2
+            );
+
+            // 🔹 1. Generar vértices del hexágono
+            PointF[] points = new PointF[6];
+
+            for (int i = 0; i < 6; i++)
+            {
+                double angle = (Math.PI / 180) * (-90 + i * 60);
+
+                points[i] = new PointF(
+                    center.X + (float)(Math.Cos(angle) * scaledRadius),
+                    center.Y + (float)(Math.Sin(angle) * scaledRadius)
+                );
+            }
+
+            // 🔹 2. Calcular centro (promedio)
+            float cx = 0, cy = 0;
+
+            foreach (var p in points)
+            {
+                cx += p.X;
+                cy += p.Y;
+            }
+
+            cx /= 6;
+            cy /= 6;
+
+            PointF centro = new PointF(cx, cy);
+
+            // 🔹 3. Colores
+            Color[] colores = new Color[]
+            {
+                Color.Red,
+                Color.Green,
+                Color.Blue,
+                Color.Yellow,
+                Color.Orange,
+                Color.Purple
+            };
+
+            // 🔹 4. Dibujar triángulos
+            for (int i = 0; i < 6; i++)
+            {
+                PointF p1 = points[i];
+                PointF p2 = points[(i + 1) % 6];
+
+                PointF[] triangulo = new PointF[]
+                {
+                    centro,
+                    p1,
+                    p2
+                };
+
+                using (SolidBrush brush = new SolidBrush(colores[i]))
+                {
+                    g.FillPolygon(brush, triangulo);
+                }
+
+                g.DrawPolygon(Pens.Black, triangulo);
+            }
+
+            // 🔹 5. Borde del hexágono
+            using (Pen pen = new Pen(Color.Blue, 2))
+            {
+                g.DrawPolygon(pen, points);
+            }
+        }
+    }
+}

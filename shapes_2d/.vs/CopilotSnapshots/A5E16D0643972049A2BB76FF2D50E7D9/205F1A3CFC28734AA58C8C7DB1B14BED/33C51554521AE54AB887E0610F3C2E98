@@ -1,0 +1,237 @@
+﻿namespace shapes_2d
+{
+    partial class FrmRectangulo
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.LblEntrada = new System.Windows.Forms.Label();
+            this.LblAncho = new System.Windows.Forms.Label();
+            this.LblLargo = new System.Windows.Forms.Label();
+            this.TxtAncho = new System.Windows.Forms.TextBox();
+            this.TxtLargo = new System.Windows.Forms.TextBox();
+            this.LblGrafico = new System.Windows.Forms.Label();
+            this.LblProceso = new System.Windows.Forms.Label();
+            this.BtnCalcular = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
+            this.BtnResetear = new System.Windows.Forms.Button();
+            this.LblSalida = new System.Windows.Forms.Label();
+            this.LblPerimetro = new System.Windows.Forms.Label();
+            this.LblArea = new System.Windows.Forms.Label();
+            this.PnlGrafico = new System.Windows.Forms.Panel();
+            this.LblValPerimetro = new System.Windows.Forms.Label();
+            this.LblValArea = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // LblEntrada
+            // 
+            this.LblEntrada.AutoSize = true;
+            this.LblEntrada.Location = new System.Drawing.Point(55, 66);
+            this.LblEntrada.Name = "LblEntrada";
+            this.LblEntrada.Size = new System.Drawing.Size(57, 16);
+            this.LblEntrada.TabIndex = 0;
+            this.LblEntrada.Text = "Entrada:";
+            // 
+            // LblAncho
+            // 
+            this.LblAncho.AutoSize = true;
+            this.LblAncho.Location = new System.Drawing.Point(55, 98);
+            this.LblAncho.Name = "LblAncho";
+            this.LblAncho.Size = new System.Drawing.Size(67, 16);
+            this.LblAncho.TabIndex = 1;
+            this.LblAncho.Text = "Ancho (a):";
+            // 
+            // LblLargo
+            // 
+            this.LblLargo.AutoSize = true;
+            this.LblLargo.Location = new System.Drawing.Point(55, 141);
+            this.LblLargo.Name = "LblLargo";
+            this.LblLargo.Size = new System.Drawing.Size(64, 16);
+            this.LblLargo.TabIndex = 2;
+            this.LblLargo.Text = "Largo (b):";
+            // 
+            // TxtAncho
+            // 
+            this.TxtAncho.Location = new System.Drawing.Point(136, 99);
+            this.TxtAncho.Name = "TxtAncho";
+            this.TxtAncho.Size = new System.Drawing.Size(100, 22);
+            this.TxtAncho.TabIndex = 3;
+            // 
+            // TxtLargo
+            // 
+            this.TxtLargo.Location = new System.Drawing.Point(136, 138);
+            this.TxtLargo.Name = "TxtLargo";
+            this.TxtLargo.Size = new System.Drawing.Size(100, 22);
+            this.TxtLargo.TabIndex = 4;
+            // 
+            // LblGrafico
+            // 
+            this.LblGrafico.AutoSize = true;
+            this.LblGrafico.Location = new System.Drawing.Point(381, 66);
+            this.LblGrafico.Name = "LblGrafico";
+            this.LblGrafico.Size = new System.Drawing.Size(53, 16);
+            this.LblGrafico.TabIndex = 5;
+            this.LblGrafico.Text = "Gráfico:";
+            // 
+            // LblProceso
+            // 
+            this.LblProceso.AutoSize = true;
+            this.LblProceso.Location = new System.Drawing.Point(77, 224);
+            this.LblProceso.Name = "LblProceso";
+            this.LblProceso.Size = new System.Drawing.Size(61, 16);
+            this.LblProceso.TabIndex = 6;
+            this.LblProceso.Text = "Proceso:";
+            // 
+            // BtnCalcular
+            // 
+            this.BtnCalcular.Location = new System.Drawing.Point(58, 261);
+            this.BtnCalcular.Name = "BtnCalcular";
+            this.BtnCalcular.Size = new System.Drawing.Size(75, 23);
+            this.BtnCalcular.TabIndex = 7;
+            this.BtnCalcular.Text = "Calcular";
+            this.BtnCalcular.UseVisualStyleBackColor = true;
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.Location = new System.Drawing.Point(248, 261);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(75, 23);
+            this.BtnSalir.TabIndex = 8;
+            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.UseVisualStyleBackColor = true;
+            // 
+            // BtnResetear
+            // 
+            this.BtnResetear.Location = new System.Drawing.Point(150, 261);
+            this.BtnResetear.Name = "BtnResetear";
+            this.BtnResetear.Size = new System.Drawing.Size(75, 23);
+            this.BtnResetear.TabIndex = 9;
+            this.BtnResetear.Text = "Restear";
+            this.BtnResetear.UseVisualStyleBackColor = true;
+            // 
+            // LblSalida
+            // 
+            this.LblSalida.AutoSize = true;
+            this.LblSalida.Location = new System.Drawing.Point(41, 324);
+            this.LblSalida.Name = "LblSalida";
+            this.LblSalida.Size = new System.Drawing.Size(56, 16);
+            this.LblSalida.TabIndex = 10;
+            this.LblSalida.Text = "Salidas:";
+            // 
+            // LblPerimetro
+            // 
+            this.LblPerimetro.AutoSize = true;
+            this.LblPerimetro.Location = new System.Drawing.Point(44, 358);
+            this.LblPerimetro.Name = "LblPerimetro";
+            this.LblPerimetro.Size = new System.Drawing.Size(68, 16);
+            this.LblPerimetro.TabIndex = 11;
+            this.LblPerimetro.Text = "Perimetro:";
+            this.LblPerimetro.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // LblArea
+            // 
+            this.LblArea.AutoSize = true;
+            this.LblArea.Location = new System.Drawing.Point(58, 398);
+            this.LblArea.Name = "LblArea";
+            this.LblArea.Size = new System.Drawing.Size(39, 16);
+            this.LblArea.TabIndex = 12;
+            this.LblArea.Text = "Área:";
+            // 
+            // PnlGrafico
+            // 
+            this.PnlGrafico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PnlGrafico.Location = new System.Drawing.Point(381, 99);
+            this.PnlGrafico.Name = "PnlGrafico";
+            this.PnlGrafico.Size = new System.Drawing.Size(350, 300);
+            this.PnlGrafico.TabIndex = 13;
+            this.PnlGrafico.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlGrafico_Paint);
+            // 
+            // LblValPerimetro
+            // 
+            this.LblValPerimetro.AutoSize = true;
+            this.LblValPerimetro.Location = new System.Drawing.Point(136, 358);
+            this.LblValPerimetro.Name = "LblValPerimetro";
+            this.LblValPerimetro.Size = new System.Drawing.Size(14, 16);
+            this.LblValPerimetro.TabIndex = 14;
+            this.LblValPerimetro.Text = "0";
+            // 
+            // LblValArea
+            // 
+            this.LblValArea.AutoSize = true;
+            this.LblValArea.Location = new System.Drawing.Point(136, 398);
+            this.LblValArea.Name = "LblValArea";
+            this.LblValArea.Size = new System.Drawing.Size(14, 16);
+            this.LblValArea.TabIndex = 15;
+            this.LblValArea.Text = "0";
+            // 
+            // FrmRectangulo
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.LblValArea);
+            this.Controls.Add(this.LblValPerimetro);
+            this.Controls.Add(this.PnlGrafico);
+            this.Controls.Add(this.LblArea);
+            this.Controls.Add(this.LblPerimetro);
+            this.Controls.Add(this.LblSalida);
+            this.Controls.Add(this.BtnResetear);
+            this.Controls.Add(this.BtnSalir);
+            this.Controls.Add(this.BtnCalcular);
+            this.Controls.Add(this.LblProceso);
+            this.Controls.Add(this.LblGrafico);
+            this.Controls.Add(this.TxtLargo);
+            this.Controls.Add(this.TxtAncho);
+            this.Controls.Add(this.LblLargo);
+            this.Controls.Add(this.LblAncho);
+            this.Controls.Add(this.LblEntrada);
+            this.Name = "FrmRectangulo";
+            this.Text = "Rectangulo";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label LblEntrada;
+        private System.Windows.Forms.Label LblAncho;
+        private System.Windows.Forms.Label LblLargo;
+        private System.Windows.Forms.TextBox TxtAncho;
+        private System.Windows.Forms.TextBox TxtLargo;
+        private System.Windows.Forms.Label LblGrafico;
+        private System.Windows.Forms.Label LblProceso;
+        private System.Windows.Forms.Button BtnCalcular;
+        private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Button BtnResetear;
+        private System.Windows.Forms.Label LblSalida;
+        private System.Windows.Forms.Label LblPerimetro;
+        private System.Windows.Forms.Label LblArea;
+        private System.Windows.Forms.Panel PnlGrafico;
+        private System.Windows.Forms.Label LblValPerimetro;
+        private System.Windows.Forms.Label LblValArea;
+    }
+}

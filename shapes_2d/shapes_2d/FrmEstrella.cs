@@ -1,0 +1,117 @@
+﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmEstrella : Form
+    {
+        private double tamaño;
+
+        public FrmEstrella()
+        {
+            InitializeComponent();
+        }
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(TxtTamaño.Text, out tamaño) || tamaño <= 0)
+            {
+                MessageBox.Show("Tamaño (a) debe ser un número válido mayor a 0");
+                return;
+            }
+
+            PointF[] points = CrearPuntosEstrella();
+            double perimetro = CalcularPerimetro(points);
+            double area = CalcularArea(points);
+
+            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            LblArea.Text = $"Área: {Math.Abs(area):F2}";
+
+            this.Invalidate();
+        }
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+            TxtTamaño.Text = "";
+            LblPerimetro.Text = "Perimetro:";
+            LblArea.Text = "Área:";
+            tamaño = 0;
+            this.Invalidate();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmEstrella_Paint(object sender, PaintEventArgs e)
+        {
+            if (tamaño <= 0)
+            {
+                return;
+            }
+
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+
+            using (Pen pen = new Pen(Color.Black, 2))
+            using (Brush fill = new SolidBrush(Color.FromArgb(180, Color.SkyBlue)))
+            {
+                PointF[] points = CrearPuntosEstrella();
+                g.FillPolygon(fill, points);
+                g.DrawPolygon(pen, points);
+            }
+        }
+
+        private PointF[] CrearPuntosEstrella()
+        {
+            float outerRadius = (float)tamaño * 10f;
+            float innerRadius = outerRadius * 0.5f;
+            float x = 700f;
+            float y = 150f;
+            PointF center = new PointF(x + outerRadius, y + outerRadius);
+
+            PointF[] points = new PointF[10];
+            for (int i = 0; i < points.Length; i++)
+            {
+                float radius = (i % 2 == 0) ? outerRadius : innerRadius;
+                double angle = (Math.PI / 180) * (-90 + i * 36);
+                points[i] = new PointF(
+                    center.X + (float)(Math.Cos(angle) * radius),
+                    center.Y + (float)(Math.Sin(angle) * radius));
+            }
+
+            return points;
+        }
+
+        private static double CalcularPerimetro(PointF[] points)
+        {
+            double perimetro = 0;
+            for (int i = 0; i < points.Length; i++)
+            {
+                PointF a = points[i];
+                PointF b = points[(i + 1) % points.Length];
+                double dx = b.X - a.X;
+                double dy = b.Y - a.Y;
+                perimetro += Math.Sqrt(dx * dx + dy * dy);
+            }
+
+            return perimetro / 10d;
+        }
+
+        private static double CalcularArea(PointF[] points)
+        {
+            double area = 0;
+            for (int i = 0; i < points.Length; i++)
+            {
+                PointF a = points[i];
+                PointF b = points[(i + 1) % points.Length];
+                area += (a.X * b.Y) - (b.X * a.Y);
+            }
+
+            return area / 100d;
+        }
+    }
+}

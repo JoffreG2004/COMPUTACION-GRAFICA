@@ -1,0 +1,160 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmTriangle : Form
+    {
+        public FrmTriangle()
+        {
+            InitializeComponent();
+        }
+
+        double lado1, lado2, lado3;
+
+        private void VerificaYMuestraRecomendacion()
+        {
+            bool tieneAncho = double.TryParse(TxtAncho.Text, out double a) && a > 0;
+            bool tieneLargo = double.TryParse(TxtLargo.Text, out double b) && b > 0;
+            bool tieneAltura = double.TryParse(TxtAltura.Text, out double c) && c > 0;
+
+            int valoresIngresados = (tieneAncho ? 1 : 0) + (tieneLargo ? 1 : 0) + (tieneAltura ? 1 : 0);
+
+            if (valoresIngresados == 2)
+            {
+                string recomendacion = "";
+
+                if (tieneAncho && tieneLargo && !tieneAltura)
+                {
+                    // Tiene Ancho y Largo, falta Altura
+                    double minAltura = Math.Abs(a - b);
+                    double maxAltura = a + b;
+                    recomendacion = $"Altura (c) debe estar entre {minAltura:F2} y {maxAltura:F2}";
+                }
+                else if (tieneAncho && tieneAltura && !tieneLargo)
+                {
+                    // Tiene Ancho y Altura, falta Largo
+                    double minLargo = Math.Abs(a - c);
+                    double maxLargo = a + c;
+                    recomendacion = $"Largo (b) debe estar entre {minLargo:F2} y {maxLargo:F2}";
+                }
+                else if (tieneLargo && tieneAltura && !tieneAncho)
+                {
+                    // Tiene Largo y Altura, falta Ancho
+                    double minAncho = Math.Abs(b - c);
+                    double maxAncho = b + c;
+                    recomendacion = $"Ancho (a) debe estar entre {minAncho:F2} y {maxAncho:F2}";
+                }
+
+                LblRecomendacion.Text = recomendacion;
+            }
+            else
+            {
+                LblRecomendacion.Text = "";
+            }
+        }
+
+        private void Txt_TextChanged(object sender, EventArgs e)
+        {
+            VerificaYMuestraRecomendacion();
+        }
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(TxtAncho.Text, out lado1) || lado1 <= 0)
+            {
+                MessageBox.Show("Lado (a) debe ser un número válido mayor a 0");
+                return;
+            }
+
+            if (!double.TryParse(TxtLargo.Text, out lado2) || lado2 <= 0)
+            {
+                MessageBox.Show("Lado (b) debe ser un número válido mayor a 0");
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(TxtAltura.Text))
+            {
+                // Si no ingresa la altura, calcular usando Pitágoras (para triángulo rectángulo)
+                lado3 = Math.Sqrt(lado1 * lado1 + lado2 * lado2);
+                TxtAltura.Text = lado3.ToString("F2");
+            }
+            else
+            {
+                if (!double.TryParse(TxtAltura.Text, out lado3) || lado3 <= 0)
+                {
+                    MessageBox.Show("Altura (c) debe ser un número válido mayor a 0");
+                    return;
+                }
+            }
+
+            // Validar que sea un triángulo válido (desigualdad triangular)
+            if (!EsTrianguloValido(lado1, lado2, lado3))
+            {
+                MessageBox.Show("Los lados ingresados no forman un triángulo válido.\nRecuerda: la suma de dos lados debe ser mayor que el tercero");
+                return;
+            }
+
+            this.Invalidate();
+
+            double perimetro = lado1 + lado2 + lado3;
+
+            // Usar la fórmula de Herón para calcular el área
+            double s = perimetro / 2;
+            double area = Math.Sqrt(s * (s - lado1) * (s - lado2) * (s - lado3));
+
+            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            LblArea.Text = $"Área: {area:F2}";
+        }
+
+        private bool EsTrianguloValido(double a, double b, double c)
+        {
+            return (a + b > c) && (a + c > b) && (b + c > a);
+        }
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+            TxtAncho.Text = "";
+            TxtLargo.Text = "";
+            TxtAltura.Text = "";
+
+            LblPerimetro.Text = "Perimetro:";
+            LblArea.Text = "Área:";
+
+            lado1 = 0;
+            lado2 = 0;
+            lado3 = 0;
+
+            this.Invalidate();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmTriangle_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            Pen pen = new Pen(Color.Blue, 2);
+
+            if (lado1 > 0 && lado2 > 0 && lado3 > 0)
+            {
+                // Dibujar un triángulo rectángulo escalado
+                PointF p1 = new PointF(400, 100);
+                PointF p2 = new PointF(400 + (float)lado1 * 2, 100);
+                PointF p3 = new PointF(400, 100 + (float)lado2 * 2);
+
+                PointF[] triangulo = { p1, p2, p3 };
+                g.DrawPolygon(pen, triangulo);
+            }
+        }
+    }
+}

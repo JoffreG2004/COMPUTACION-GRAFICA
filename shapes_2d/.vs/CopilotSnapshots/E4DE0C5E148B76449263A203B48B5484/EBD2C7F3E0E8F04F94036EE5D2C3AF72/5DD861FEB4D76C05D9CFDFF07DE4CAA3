@@ -1,0 +1,82 @@
+﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmCorazon : Form
+    {
+        private double tamaño;
+
+        public FrmCorazon()
+        {
+            InitializeComponent();
+        }
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(TxtTamaño.Text, out tamaño) || tamaño <= 0)
+            {
+                MessageBox.Show("Tamaño (a) debe ser un número válido mayor a 0");
+                return;
+            }
+
+            double r = tamaño * 10d;
+            double area = (Math.PI * r * r) + (1.4d * r * r);
+            double perimetro = (2 * Math.PI * r) + (2 * Math.Sqrt(r * r + (1.4d * r) * (1.4d * r)));
+
+            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            LblArea.Text = $"Área: {area:F2}";
+
+            this.Invalidate();
+        }
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+            TxtTamaño.Text = "";
+            LblPerimetro.Text = "Perimetro:";
+            LblArea.Text = "Área:";
+            tamaño = 0;
+            this.Invalidate();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmCorazon_Paint(object sender, PaintEventArgs e)
+        {
+            if (tamaño <= 0)
+            {
+                return;
+            }
+
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+
+            using (Pen pen = new Pen(Color.Black, 2))
+            using (Brush fill = new SolidBrush(Color.FromArgb(180, Color.Red)))
+            using (GraphicsPath path = new GraphicsPath())
+            {
+                float r = (float)tamaño * 10f;
+                float x = 700f;
+                float y = 150f;
+
+                path.AddEllipse(x, y, r * 2f, r * 2f);
+                path.AddEllipse(x + r, y, r * 2f, r * 2f);
+                path.AddPolygon(new[]
+                {
+                    new PointF(x, y + r),
+                    new PointF(x + r * 2f, y + r),
+                    new PointF(x + r, y + r * 2.4f)
+                });
+                path.CloseFigure();
+
+                g.FillPath(fill, path);
+                g.DrawPath(pen, path);
+            }
+        }
+    }
+}

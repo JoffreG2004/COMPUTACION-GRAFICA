@@ -1,0 +1,141 @@
+﻿namespace shapes_2d
+{
+    partial class FrmHome
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Graphics = new System.Windows.Forms.ToolStripMenuItem();
+            this.ExampletoolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.CalculotoolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.FigurastoolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.figuratoolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.recttoolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.RectangulotoolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.Color.Salmon;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.Graphics,
+            this.CalculotoolStripMenuItem2,
+            this.FigurastoolStripMenuItem2,
+            this.figuratoolStripMenuItem2});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(970, 28);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(14, 24);
+            // 
+            // Graphics
+            // 
+            this.Graphics.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ExampletoolStripMenuItem2});
+            this.Graphics.Name = "Graphics";
+            this.Graphics.Size = new System.Drawing.Size(80, 24);
+            this.Graphics.Text = "Graphics";
+            // 
+            // ExampletoolStripMenuItem2
+            // 
+            this.ExampletoolStripMenuItem2.Name = "ExampletoolStripMenuItem2";
+            this.ExampletoolStripMenuItem2.Size = new System.Drawing.Size(149, 26);
+            this.ExampletoolStripMenuItem2.Text = "Example";
+            this.ExampletoolStripMenuItem2.Click += new System.EventHandler(this.ExampletoolStripMenuItem2_Click);
+            // 
+            // CalculotoolStripMenuItem2
+            // 
+            this.CalculotoolStripMenuItem2.Name = "CalculotoolStripMenuItem2";
+            this.CalculotoolStripMenuItem2.Size = new System.Drawing.Size(14, 24);
+            // 
+            // FigurastoolStripMenuItem2
+            // 
+            this.FigurastoolStripMenuItem2.Name = "FigurastoolStripMenuItem2";
+            this.FigurastoolStripMenuItem2.Size = new System.Drawing.Size(14, 24);
+            // 
+            // figuratoolStripMenuItem2
+            // 
+            this.figuratoolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.recttoolStripMenuItem2});
+            this.figuratoolStripMenuItem2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.figuratoolStripMenuItem2.Name = "figuratoolStripMenuItem2";
+            this.figuratoolStripMenuItem2.Size = new System.Drawing.Size(93, 24);
+            this.figuratoolStripMenuItem2.Text = "Figuras 2D";
+            // 
+            // recttoolStripMenuItem2
+            // 
+            this.recttoolStripMenuItem2.Name = "recttoolStripMenuItem2";
+            this.recttoolStripMenuItem2.Size = new System.Drawing.Size(167, 26);
+            this.recttoolStripMenuItem2.Text = "Rectangulo";
+            this.recttoolStripMenuItem2.Click += new System.EventHandler(this.recttoolStripMenuItem2_Click);
+            // 
+            // RectangulotoolStripMenuItem2
+            // 
+            this.RectangulotoolStripMenuItem2.Name = "RectangulotoolStripMenuItem2";
+            this.RectangulotoolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
+            this.RectangulotoolStripMenuItem2.Text = "Rectangulo";
+            // 
+            // FrmHome
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(970, 567);
+            this.Controls.Add(this.menuStrip1);
+            this.IsMdiContainer = true;
+            this.MainMenuStrip = this.menuStrip1;
+            this.Name = "FrmHome";
+            this.Text = "Home";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem Graphics;
+        private System.Windows.Forms.ToolStripMenuItem ExampletoolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem CalculotoolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem FigurastoolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem RectangulotoolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem figuratoolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem recttoolStripMenuItem2;
+    }
+}

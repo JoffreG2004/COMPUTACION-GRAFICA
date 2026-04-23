@@ -1,0 +1,97 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmRectangulo : Form
+    {
+        public FrmRectangulo()
+        {
+            InitializeComponent();
+        }
+
+        int ancho, alto;
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(TxtAncho.Text, out ancho) &&
+                int.TryParse(TxtLargo.Text, out alto) &&
+                ancho > 0 && alto > 0)
+            {
+                this.Invalidate();
+
+                int perimetro = 2 * (ancho + alto);
+                int area = ancho * alto;
+
+                LblPerimetro.Text = $"Perímetro: {perimetro}";
+                LblArea.Text = $"Área: {area}";
+            }
+            else
+            {
+                MessageBox.Show("Ingrese valores válidos");
+            }
+        }
+
+
+
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+          
+            TxtAncho.Text = "";
+            TxtLargo.Text = "";
+
+          
+            LblPerimetro.Text = "Perímetro:";
+            LblArea.Text = "Área:";
+
+            
+            ancho = 0;
+            alto = 0;
+
+            
+            this.Invalidate();
+           
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmRectangulo_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+            using (Pen pen = new Pen(Color.Blue, 2))
+            {
+                if (ancho > 0 && alto > 0)
+                {
+                    RectangleF bounds = new RectangleF(520f, 80f, 420f, 360f);
+                    const float padding = 16f;
+
+                    float width = ancho;
+                    float height = alto;
+
+                    float scale = Math.Min((bounds.Width - padding * 2f) / width, (bounds.Height - padding * 2f) / height);
+                    scale = Math.Max(0.1f, scale);
+
+                    float drawWidth = width * scale;
+                    float drawHeight = height * scale;
+                    float x = bounds.X + (bounds.Width - drawWidth) / 2f;
+                    float y = bounds.Y + (bounds.Height - drawHeight) / 2f;
+
+                    g.DrawRectangle(pen, x, y, drawWidth, drawHeight);
+                }
+            }
+        }
+    }
+}

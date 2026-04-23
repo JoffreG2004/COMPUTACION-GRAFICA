@@ -1,0 +1,77 @@
+﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmLunaCreciente : Form
+    {
+        private double tamaño;
+
+        public FrmLunaCreciente()
+        {
+            InitializeComponent();
+        }
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(TxtTamaño.Text, out tamaño) || tamaño <= 0)
+            {
+                MessageBox.Show("Tamaño (a) debe ser un número válido mayor a 0");
+                return;
+            }
+
+            double radio = tamaño * 10d;
+            double radioInterno = radio * 0.6d;
+            double area = Math.PI * (radio * radio - radioInterno * radioInterno);
+            double perimetro = (2 * Math.PI * radio) + (2 * Math.PI * radioInterno);
+
+            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            LblArea.Text = $"Área: {area:F2}";
+
+            this.Invalidate();
+        }
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+            TxtTamaño.Text = "";
+            LblPerimetro.Text = "Perimetro:";
+            LblArea.Text = "Área:";
+            tamaño = 0;
+            this.Invalidate();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmLunaCreciente_Paint(object sender, PaintEventArgs e)
+        {
+            if (tamaño <= 0)
+            {
+                return;
+            }
+
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+
+            float radio = (float)tamaño * 10f;
+            float radioInterno = radio * 0.6f;
+            float x = 700f;
+            float y = 150f;
+
+            using (GraphicsPath path = new GraphicsPath(FillMode.Alternate))
+            using (Brush fill = new SolidBrush(Color.FromArgb(180, Color.DarkGoldenrod)))
+            using (Pen pen = new Pen(Color.Black, 2))
+            {
+                path.AddEllipse(x, y, radio * 2f, radio * 2f);
+                path.AddEllipse(x + radio * 0.45f, y + radio * 0.1f, radioInterno * 2f, radioInterno * 2f);
+
+                g.FillPath(fill, path);
+                g.DrawPath(pen, path);
+            }
+        }
+    }
+}

@@ -1,0 +1,387 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmlunacreciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmlunacreciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmcorazon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmcorazon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmcorazon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmcorazon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmlunacreciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmlunacreciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmhexagono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmhexagono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmrectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmrectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmparalelogramo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmparalelogramo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmcometa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmcometa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmrombo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmrombo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmovalo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmovalo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmhome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmhome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmovalo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmovalo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmparalelogramo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmparalelogramo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmparalelogramo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmparalelogramo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmrombo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmrombo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmrombo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmrombo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmcometa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmcometa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmcometa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmcometa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|d:\\5to semestre\\grafica\\shapes_2d\\shapes_2d\\frmlunacreciente.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmlunacreciente.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FrmLunaCreciente.Designer.cs",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmLunaCreciente.Designer.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmLunaCreciente.Designer.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmLunaCreciente.Designer.cs",
+              "RelativeToolTip": "shapes_2d\\FrmLunaCreciente.Designer.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T01:26:33.932Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "README.md",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-04-23T01:48:11.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmHome.cs",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmHome.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.cs",
+              "RelativeToolTip": "shapes_2d\\FrmHome.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAWwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T01:25:49.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmLunaCreciente.cs",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmLunaCreciente.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmLunaCreciente.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmLunaCreciente.cs",
+              "RelativeToolTip": "shapes_2d\\FrmLunaCreciente.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAADwv0UAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T01:27:23.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmCorazon.cs",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmCorazon.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmCorazon.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmCorazon.cs",
+              "RelativeToolTip": "shapes_2d\\FrmCorazon.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAADwv0UAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T01:33:09.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmHome.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmHome.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmHome.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:00:17.704Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmCorazon.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmCorazon.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmCorazon.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmCorazon.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmCorazon.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T01:23:17.623Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmLunaCreciente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmLunaCreciente.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmLunaCreciente.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmLunaCreciente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmLunaCreciente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T01:23:47.029Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmHexagono.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmHexagono.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmHexagono.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmHexagono.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmHexagono.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T01:05:12.172Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FrmRombo.Designer.cs",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmRombo.Designer.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmRombo.Designer.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmRombo.Designer.cs",
+              "RelativeToolTip": "shapes_2d\\FrmRombo.Designer.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:53:14.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmRectangulo.cs",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmRectangulo.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmRectangulo.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmRectangulo.cs",
+              "RelativeToolTip": "shapes_2d\\FrmRectangulo.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAWwEgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:52:03.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FrmCometa.cs",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmCometa.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmCometa.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmCometa.cs",
+              "RelativeToolTip": "shapes_2d\\FrmCometa.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:53:40.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FrmRombo.cs",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmRombo.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmRombo.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmRombo.cs",
+              "RelativeToolTip": "shapes_2d\\FrmRombo.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:53:23.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "FrmCometa.Designer.cs",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmCometa.Designer.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmCometa.Designer.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmCometa.Designer.cs",
+              "RelativeToolTip": "shapes_2d\\FrmCometa.Designer.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:53:31.667Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FrmParalelogramo.Designer.cs",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmParalelogramo.Designer.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmParalelogramo.Designer.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmParalelogramo.Designer.cs",
+              "RelativeToolTip": "shapes_2d\\FrmParalelogramo.Designer.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:51:36.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmCometa.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmCometa.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmCometa.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmCometa.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmCometa.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:47:14.464Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmParalelogramo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmParalelogramo.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmParalelogramo.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmParalelogramo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmParalelogramo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:45:12.452Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FrmParalelogramo.cs",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmParalelogramo.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmParalelogramo.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmParalelogramo.cs",
+              "RelativeToolTip": "shapes_2d\\FrmParalelogramo.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:51:45.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FrmRombo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmRombo.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmRombo.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmRombo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmRombo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:46:44.772Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FrmHome.Designer.cs",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.Designer.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmHome.Designer.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.Designer.cs",
+              "RelativeToolTip": "shapes_2d\\FrmHome.Designer.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAswHgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:37:51.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FrmOvalo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmOvalo.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmOvalo.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmOvalo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmOvalo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:18:29.492Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FrmOvalo.Designer.cs",
+              "DocumentMoniker": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmOvalo.Designer.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmOvalo.Designer.cs",
+              "ToolTip": "D:\\5TO SEMESTRE\\GRAFICA\\shapes_2d\\shapes_2d\\FrmOvalo.Designer.cs",
+              "RelativeToolTip": "shapes_2d\\FrmOvalo.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-23T00:19:46.428Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

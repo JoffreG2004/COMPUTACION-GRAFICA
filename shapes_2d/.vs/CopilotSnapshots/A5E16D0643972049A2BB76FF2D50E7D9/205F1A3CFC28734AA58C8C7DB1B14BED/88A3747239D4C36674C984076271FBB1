@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmHome : Form
+    {
+        public FrmHome()
+        {
+            InitializeComponent();
+        }
+        private void AbrirFormulario<T>() where T : Form, new()
+        {
+            // Buscar si ya está abierto
+            foreach (Form hijo in this.MdiChildren)
+            {
+                if (hijo is T)
+                {
+                    hijo.BringToFront();
+                    return;
+                }
+            }
+
+            // Si no existe, crearlo
+            T formulario = new T();
+            formulario.MdiParent = this;
+            formulario.Show();
+        }
+
+        private void ExampletoolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+
+            AbrirFormulario<FrmExample>(); ;
+        
+        }
+
+        private void recttoolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRectangulo>();
+        }
+    }
+}

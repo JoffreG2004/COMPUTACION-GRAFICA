@@ -1,0 +1,93 @@
+﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmOvalo : Form
+    {
+        private double radio1;
+
+        public FrmOvalo()
+        {
+            InitializeComponent();
+            this.Paint += FrmOvalo_Paint;
+        }
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(TxtRadio1.Text, out radio1) || radio1 <= 0)
+            {
+                MessageBox.Show("Tamaño (a) debe ser un número válido mayor a 0");
+                return;
+            }
+
+            double height = radio1 * 2d * 10d;
+            double width = height * 0.75d;
+
+            double a = width / 2d;
+            double b = height / 2d;
+
+            double perimetro = Math.PI * (3 * (a + b) - Math.Sqrt((3 * a + b) * (a + 3 * b)));
+            double area = Math.PI * a * b;
+
+            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            LblArea.Text = $"Área: {area:F2}";
+
+            this.Invalidate();
+        }
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+            TxtRadio1.Text = "";
+            LblPerimetro.Text = "Perímetro:";
+            LblArea.Text = "Área:";
+            radio1 = 0;
+            this.Invalidate();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmOvalo_Paint(object sender, PaintEventArgs e)
+        {
+            if (radio1 <= 0) return;
+
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+
+            using (Pen pen = new Pen(Color.Black, 2))
+            using (Brush fill = new SolidBrush(Color.FromArgb(180, Color.IndianRed)))
+            using (GraphicsPath path = new GraphicsPath())
+            {
+                float height = (float)radio1 * 2f * 10f;
+                float width = height * 0.75f;
+
+                float x = 700f;
+                float y = 150f;
+
+                // 🔥 MISMO ancho para ambos → clave para evitar líneas
+                float bottomHeight = height * 0.45f;
+                float topHeight = height * 1.05f;
+
+                float bottomY = y + height - bottomHeight;
+
+                path.StartFigure();
+
+                // Arco superior
+                path.AddArc(new RectangleF(x, y, width, topHeight), 180f, 180f);
+
+                // Arco inferior
+                path.AddArc(new RectangleF(x, bottomY, width, bottomHeight), 0f, 180f);
+
+                path.CloseFigure();
+
+                g.FillPath(fill, path);
+                g.DrawPath(pen, path);
+            }
+        }
+    }
+}

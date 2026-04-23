@@ -1,0 +1,138 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmRectangulo : Form
+    {
+        private double ancho = 0;
+        private double largo = 0;
+
+        public FrmRectangulo()
+        {
+            InitializeComponent();
+            ConfigurarEventos();
+        }
+
+        private void ConfigurarEventos()
+        {
+            BtnCalcular.Click += BtnCalcular_Click;
+            BtnResetear.Click += BtnResetear_Click;
+            BtnSalir.Click += BtnSalir_Click;
+        }
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (ValidarEntrada())
+            {
+                CalcularRectangulo();
+                PnlGrafico.Invalidate();
+            }
+        }
+
+        private bool ValidarEntrada()
+        {
+            if (!double.TryParse(TxtAncho.Text, out ancho) || ancho <= 0)
+            {
+                MessageBox.Show("Por favor ingresa un ancho válido (mayor a 0)", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TxtAncho.Focus();
+                return false;
+            }
+
+            if (!double.TryParse(TxtLargo.Text, out largo) || largo <= 0)
+            {
+                MessageBox.Show("Por favor ingresa un largo válido (mayor a 0)", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                TxtLargo.Focus();
+                return false;
+            }
+
+            return true;
+        }
+
+        private void CalcularRectangulo()
+        {
+            double perimetro = 2 * (ancho + largo);
+            double area = ancho * largo;
+
+            LblValPerimetro.Text = perimetro.ToString("F2");
+            LblValArea.Text = area.ToString("F2");
+        }
+
+        private void PnlGrafico_Paint(object sender, PaintEventArgs e)
+        {
+            if (ancho > 0 && largo > 0)
+            {
+                DibujarRectangulo(e.Graphics);
+            }
+        }
+
+        private void DibujarRectangulo(Graphics g)
+        {
+            // Márgenes del panel
+            int margen = 20;
+            int anchoDisponible = PnlGrafico.Width - (2 * margen);
+            int largoDisponible = PnlGrafico.Height - (2 * margen);
+
+            // Escala para que quepa en el panel
+            double escalaAncho = anchoDisponible / ancho;
+            double escalaLargo = largoDisponible / largo;
+            double escala = Math.Min(escalaAncho, escalaLargo);
+
+            // Calcular dimensiones del rectángulo dibujado
+            int rectAncho = (int)(ancho * escala);
+            int rectLargo = (int)(largo * escala);
+
+            // Centrar el rectángulo en el panel
+            int x = margen + (anchoDisponible - rectAncho) / 2;
+            int y = margen + (largoDisponible - rectLargo) / 2;
+
+            // Dibujar rectángulo
+            Pen pen = new Pen(Color.Blue, 2);
+            Brush brush = new SolidBrush(Color.LightBlue);
+            g.FillRectangle(brush, x, y, rectAncho, rectLargo);
+            g.DrawRectangle(pen, x, y, rectAncho, rectLargo);
+
+            // Dibujar dimensiones
+            Font font = new Font("Arial", 10);
+            SolidBrush textBrush = new SolidBrush(Color.Black);
+
+            // Ancho arriba
+            string textAncho = ancho.ToString("F2");
+            SizeF sizeAncho = g.MeasureString(textAncho, font);
+            g.DrawString(textAncho, font, textBrush, x + (rectAncho - sizeAncho.Width) / 2, y - 20);
+
+            // Largo a la izquierda
+            string textLargo = largo.ToString("F2");
+            SizeF sizeLargo = g.MeasureString(textLargo, font);
+            g.DrawString(textLargo, font, textBrush, x - 40, y + (rectLargo - sizeLargo.Height) / 2);
+
+            pen.Dispose();
+            brush.Dispose();
+            textBrush.Dispose();
+        }
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+            TxtAncho.Clear();
+            TxtLargo.Clear();
+            LblValPerimetro.Text = "0";
+            LblValArea.Text = "0";
+            ancho = 0;
+            largo = 0;
+            PnlGrafico.Invalidate();
+            TxtAncho.Focus();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}

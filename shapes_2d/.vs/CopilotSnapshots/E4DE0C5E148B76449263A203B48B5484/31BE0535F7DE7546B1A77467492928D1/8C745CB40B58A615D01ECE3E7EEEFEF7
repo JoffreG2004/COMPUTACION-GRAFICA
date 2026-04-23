@@ -1,0 +1,12 @@
+﻿using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmCirculo : Form
+    {
+        public FrmCirculo()
+        {
+            InitializeComponent();
+        }
+    }
+}
