@@ -1,0 +1,107 @@
+﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmCuadrado : Form
+    {
+        private int lado = 0;
+
+        public FrmCuadrado()
+        {
+            InitializeComponent();
+        }
+
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtLado.Text, out int parsedLado) &&
+                parsedLado > 0)
+            {
+                lado = parsedLado;
+
+                int perimetro = 4 * lado;
+                int area = lado * lado;
+
+                LblPerimetro.Text = $"Perímetro: {perimetro}";
+                LblArea.Text = $"Área: {area}";
+
+                pnlCuadrado.Invalidate();
+            }
+            else
+            {
+                MessageBox.Show("Ingrese valores válidos");
+            }
+        }
+
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+            txtLado.Text = "";
+
+            lado = 0;
+
+            LblPerimetro.Text = "Perímetro:";
+            LblArea.Text = "Área:";
+
+            pnlCuadrado.Invalidate();
+
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmCuadrado_Paint(object sender, PaintEventArgs e)
+        {
+            // This handler is attached to pnlCuadrado.Paint in the designer.
+            if (lado > 0 && pnlCuadrado != null)
+            {
+                Rectangle boundsRect = pnlCuadrado.ClientRectangle;
+                RectangleF bounds = new RectangleF(boundsRect.X, boundsRect.Y, boundsRect.Width, boundsRect.Height);
+
+                float available = Math.Min(bounds.Width, bounds.Height) * 0.9f; // leave 10% margin
+
+                float scale = 1f;
+                if (lado > 0)
+                {
+                    scale = available / lado;
+                }
+
+                float drawSide = lado * scale;
+
+                float x = (bounds.Width - drawSide) / 2f;
+                float y = (bounds.Height - drawSide) / 2f;
+
+                Graphics g = e.Graphics;
+                g.SmoothingMode = SmoothingMode.AntiAlias;
+
+                using (Brush brush = new SolidBrush(Color.LightYellow))
+                {
+                    g.FillRectangle(brush, x, y, drawSide, drawSide);
+                }
+
+                using (Pen pen = new Pen(Color.Blue, 2))
+                {
+                    g.DrawRectangle(pen, x, y, drawSide, drawSide);
+                }
+
+                using (Pen boundsPen = new Pen(Color.FromArgb(80, Color.Gray), 1))
+                {
+                    boundsPen.DashStyle = DashStyle.Dash;
+                    g.DrawRectangle(boundsPen, 0, 0, bounds.Width - 1, bounds.Height - 1);
+                }
+            }
+            else
+            {
+                if (pnlCuadrado != null)
+                {
+                    e.Graphics.Clear(pnlCuadrado.BackColor);
+                }
+            }
+        }
+    }
+}

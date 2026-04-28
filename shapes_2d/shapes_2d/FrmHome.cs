@@ -58,22 +58,9 @@ namespace shapes_2d
             AbrirFormulario<FrmElipse>();
         }
 
-        private void triánguloToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<FrmTriangle>();
-
-        }
-
-        private void cuadriláteroToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AbrirFormulario<FrmRectangulo>();
-        }
-
         private void polígonosRegularesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmPoligonos>();
-
-
         }
 
         private void paralelogramoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -104,6 +91,31 @@ namespace shapes_2d
         private void lunaCrecienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormulario <FrmLunaCreciente>();
+        }
+
+        private void cuadradoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmCuadrado>();
+        }
+
+        private void rectanguloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRectangulo>();
+        }
+
+        private void trapecioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmTrapecio>();
+        }
+
+        private void triánguloToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmTriangulo>();
+        }
+
+        private void triánguloRectanguloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

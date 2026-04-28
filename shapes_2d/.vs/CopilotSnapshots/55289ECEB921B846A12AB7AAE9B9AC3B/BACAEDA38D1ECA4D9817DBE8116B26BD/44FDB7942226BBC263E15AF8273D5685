@@ -1,0 +1,103 @@
+﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmCuadrado : Form
+    {
+        private int lado = 0;
+
+        public FrmCuadrado()
+        {
+            InitializeComponent();
+        }
+
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (int.TryParse(txtLado.Text, out int parsedLado) &&
+                parsedLado > 0)
+            {
+                lado = parsedLado;
+
+                int perimetro = 4 * lado;
+                int area = lado * lado;
+
+                LblPerimetro.Text = $"Perímetro: {perimetro}";
+                LblArea.Text = $"Área: {area}";
+
+                this.Invalidate();
+            }
+            else
+            {
+                MessageBox.Show("Ingrese valores válidos");
+            }
+        }
+
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+            txtLado.Text = "";
+
+            lado = 0;
+
+            LblPerimetro.Text = "Perímetro:";
+            LblArea.Text = "Área:";
+
+            this.Invalidate();
+
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void FrmCuadrado_Paint(object sender, PaintEventArgs e)
+        {
+            if (lado > 0)
+            {
+                // Drawing area (acts like the 'panel' where the square should fit)
+                RectangleF bounds = new RectangleF(560f, 80f, 380f, 360f);
+
+                // Determine scale so the square fits nicely inside the bounds while
+                // keeping proportions relative to the entered side length.
+                float available = Math.Min(bounds.Width, bounds.Height) * 0.9f; // leave margin
+
+                float scale = 1f;
+                if (lado > 0)
+                {
+                    scale = available / lado;
+                }
+
+                float drawSide = lado * scale;
+
+                // Center the square inside the bounds (the 'panel')
+                float x = bounds.X + (bounds.Width - drawSide) / 2f;
+                float y = bounds.Y + (bounds.Height - drawSide) / 2f;
+
+                Graphics g = e.Graphics;
+                g.SmoothingMode = SmoothingMode.AntiAlias;
+
+                using (Brush brush = new SolidBrush(Color.LightYellow))
+                {
+                    g.FillRectangle(brush, x, y, drawSide, drawSide);
+                }
+
+                using (Pen pen = new Pen(Color.Blue, 2))
+                {
+                    g.DrawRectangle(pen, x, y, drawSide, drawSide);
+                }
+
+                // Optional: draw the bounds rectangle lightly to indicate the drawing panel
+                using (Pen boundsPen = new Pen(Color.FromArgb(80, Color.Gray), 1))
+                {
+                    boundsPen.DashStyle = DashStyle.Dash;
+                    g.DrawRectangle(boundsPen, bounds.X, bounds.Y, bounds.Width, bounds.Height);
+                }
+            }
+        }
+    }
+}

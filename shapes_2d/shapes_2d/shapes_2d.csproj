@@ -106,11 +106,23 @@
     <Compile Include="FrmOvalo.Designer.cs">
       <DependentUpon>FrmOvalo.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmTrapecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTrapecio.Designer.cs">
+      <DependentUpon>FrmTrapecio.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmParalelogramo.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmParalelogramo.Designer.cs">
       <DependentUpon>FrmParalelogramo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCuadrado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCuadrado.Designer.cs">
+      <DependentUpon>FrmCuadrado.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRectangulo.cs">
       <SubType>Form</SubType>
@@ -124,11 +136,11 @@
     <Compile Include="FrmRombo.Designer.cs">
       <DependentUpon>FrmRombo.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmTriangle.cs">
+    <Compile Include="FrmTriangulo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmTriangle.Designer.cs">
-      <DependentUpon>FrmTriangle.cs</DependentUpon>
+    <Compile Include="FrmTriangulo.Designer.cs">
+      <DependentUpon>FrmTriangulo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -162,8 +174,14 @@
     <EmbeddedResource Include="FrmOvalo.resx">
       <DependentUpon>FrmOvalo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmTrapecio.resx">
+      <DependentUpon>FrmTrapecio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmParalelogramo.resx">
       <DependentUpon>FrmParalelogramo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCuadrado.resx">
+      <DependentUpon>FrmCuadrado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRectangulo.resx">
       <DependentUpon>FrmRectangulo.cs</DependentUpon>
@@ -171,8 +189,8 @@
     <EmbeddedResource Include="FrmRombo.resx">
       <DependentUpon>FrmRombo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmTriangle.resx">
-      <DependentUpon>FrmTriangle.cs</DependentUpon>
+    <EmbeddedResource Include="FrmTriangulo.resx">
+      <DependentUpon>FrmTriangulo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

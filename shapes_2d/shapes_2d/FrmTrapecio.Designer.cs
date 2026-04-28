@@ -1,0 +1,328 @@
+﻿namespace shapes_2d
+{
+    partial class FrmTrapecio
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.LblArea = new System.Windows.Forms.Label();
+            this.LblPerimetro = new System.Windows.Forms.Label();
+            this.LblSalida = new System.Windows.Forms.Label();
+            this.BtnResetear = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
+            this.BtnCalcular = new System.Windows.Forms.Button();
+            this.LblProceso = new System.Windows.Forms.Label();
+            this.LblGrafico = new System.Windows.Forms.Label();
+            this.txtAltura = new System.Windows.Forms.TextBox();
+            this.txtBaseMen = new System.Windows.Forms.TextBox();
+            this.txtLateral1 = new System.Windows.Forms.TextBox();
+            this.lblAltura = new System.Windows.Forms.Label();
+            this.LblAncho = new System.Windows.Forms.Label();
+            this.lblLateral1 = new System.Windows.Forms.Label();
+            this.LblEntrada = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtBaseMay = new System.Windows.Forms.TextBox();
+            this.lblTrapecioIrregular = new System.Windows.Forms.Label();
+            this.txtLateral2 = new System.Windows.Forms.TextBox();
+            this.lblLateral2 = new System.Windows.Forms.Label();
+            this.pnlTrapecio = new System.Windows.Forms.Panel();
+            this.SuspendLayout();
+            // 
+            // LblArea
+            // 
+            this.LblArea.AutoSize = true;
+            this.LblArea.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.LblArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(150)))));
+            this.LblArea.Location = new System.Drawing.Point(78, 523);
+            this.LblArea.Name = "LblArea";
+            this.LblArea.Size = new System.Drawing.Size(49, 23);
+            this.LblArea.TabIndex = 25;
+            this.LblArea.Text = "Área:";
+            // 
+            // LblPerimetro
+            // 
+            this.LblPerimetro.AutoSize = true;
+            this.LblPerimetro.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.LblPerimetro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(150)))));
+            this.LblPerimetro.Location = new System.Drawing.Point(78, 483);
+            this.LblPerimetro.Name = "LblPerimetro";
+            this.LblPerimetro.Size = new System.Drawing.Size(88, 23);
+            this.LblPerimetro.TabIndex = 24;
+            this.LblPerimetro.Text = "Perimetro:";
+            this.LblPerimetro.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // LblSalida
+            // 
+            this.LblSalida.AutoSize = true;
+            this.LblSalida.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.LblSalida.Location = new System.Drawing.Point(78, 449);
+            this.LblSalida.Name = "LblSalida";
+            this.LblSalida.Size = new System.Drawing.Size(76, 25);
+            this.LblSalida.TabIndex = 23;
+            this.LblSalida.Text = "Salidas:";
+            // 
+            // BtnResetear
+            // 
+            this.BtnResetear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.BtnResetear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnResetear.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnResetear.Location = new System.Drawing.Point(208, 386);
+            this.BtnResetear.Name = "BtnResetear";
+            this.BtnResetear.Size = new System.Drawing.Size(110, 32);
+            this.BtnResetear.TabIndex = 22;
+            this.BtnResetear.Text = "Resetear";
+            this.BtnResetear.UseVisualStyleBackColor = true;
+            this.BtnResetear.Click += new System.EventHandler(this.BtnResetear_Click);
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(68)))), ((int)(((byte)(70)))));
+            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSalir.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnSalir.ForeColor = System.Drawing.Color.White;
+            this.BtnSalir.Location = new System.Drawing.Point(338, 386);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(110, 32);
+            this.BtnSalir.TabIndex = 21;
+            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
+            // BtnCalcular
+            // 
+            this.BtnCalcular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.BtnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCalcular.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnCalcular.ForeColor = System.Drawing.Color.White;
+            this.BtnCalcular.Location = new System.Drawing.Point(78, 386);
+            this.BtnCalcular.Name = "BtnCalcular";
+            this.BtnCalcular.Size = new System.Drawing.Size(110, 32);
+            this.BtnCalcular.TabIndex = 20;
+            this.BtnCalcular.Text = "Calcular";
+            this.BtnCalcular.UseVisualStyleBackColor = true;
+            this.BtnCalcular.Click += new System.EventHandler(this.BtnCalcular_Click);
+            // 
+            // LblProceso
+            // 
+            this.LblProceso.AutoSize = true;
+            this.LblProceso.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.LblProceso.Location = new System.Drawing.Point(78, 349);
+            this.LblProceso.Name = "LblProceso";
+            this.LblProceso.Size = new System.Drawing.Size(84, 25);
+            this.LblProceso.TabIndex = 19;
+            this.LblProceso.Text = "Proceso:";
+            // 
+            // LblGrafico
+            // 
+            this.LblGrafico.AutoSize = true;
+            this.LblGrafico.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.LblGrafico.Location = new System.Drawing.Point(699, 50);
+            this.LblGrafico.Name = "LblGrafico";
+            this.LblGrafico.Size = new System.Drawing.Size(79, 25);
+            this.LblGrafico.TabIndex = 18;
+            this.LblGrafico.Text = "Gráfico:";
+            // 
+            // txtAltura
+            // 
+            this.txtAltura.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtAltura.Location = new System.Drawing.Point(235, 176);
+            this.txtAltura.Name = "txtAltura";
+            this.txtAltura.Size = new System.Drawing.Size(140, 30);
+            this.txtAltura.TabIndex = 17;
+            // 
+            // txtBaseMen
+            // 
+            this.txtBaseMen.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtBaseMen.Location = new System.Drawing.Point(235, 134);
+            this.txtBaseMen.Name = "txtBaseMen";
+            this.txtBaseMen.Size = new System.Drawing.Size(140, 30);
+            this.txtBaseMen.TabIndex = 16;
+            // 
+            // txtLateral1
+            // 
+            this.txtLateral1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtLateral1.Location = new System.Drawing.Point(236, 264);
+            this.txtLateral1.Name = "txtLateral1";
+            this.txtLateral1.Size = new System.Drawing.Size(140, 30);
+            this.txtLateral1.TabIndex = 18;
+            // 
+            // lblAltura
+            // 
+            this.lblAltura.AutoSize = true;
+            this.lblAltura.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblAltura.Location = new System.Drawing.Point(80, 183);
+            this.lblAltura.Name = "lblAltura";
+            this.lblAltura.Size = new System.Drawing.Size(85, 23);
+            this.lblAltura.TabIndex = 15;
+            this.lblAltura.Text = "Altura (h):";
+            // 
+            // LblAncho
+            // 
+            this.LblAncho.AutoSize = true;
+            this.LblAncho.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.LblAncho.Location = new System.Drawing.Point(80, 137);
+            this.LblAncho.Name = "LblAncho";
+            this.LblAncho.Size = new System.Drawing.Size(129, 23);
+            this.LblAncho.TabIndex = 14;
+            this.LblAncho.Text = "Base Menor (b):";
+            // 
+            // lblLateral1
+            // 
+            this.lblLateral1.AutoSize = true;
+            this.lblLateral1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblLateral1.Location = new System.Drawing.Point(83, 264);
+            this.lblLateral1.Name = "lblLateral1";
+            this.lblLateral1.Size = new System.Drawing.Size(79, 23);
+            this.lblLateral1.TabIndex = 18;
+            this.lblLateral1.Text = "Lateral 1:";
+            // 
+            // LblEntrada
+            // 
+            this.LblEntrada.AutoSize = true;
+            this.LblEntrada.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.LblEntrada.Location = new System.Drawing.Point(79, 50);
+            this.LblEntrada.Name = "LblEntrada";
+            this.LblEntrada.Size = new System.Drawing.Size(83, 25);
+            this.LblEntrada.TabIndex = 13;
+            this.LblEntrada.Text = "Entrada:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.label1.Location = new System.Drawing.Point(80, 94);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(127, 23);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Base Mayor (B):";
+            // 
+            // txtBaseMay
+            // 
+            this.txtBaseMay.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtBaseMay.Location = new System.Drawing.Point(235, 94);
+            this.txtBaseMay.Name = "txtBaseMay";
+            this.txtBaseMay.Size = new System.Drawing.Size(140, 30);
+            this.txtBaseMay.TabIndex = 16;
+            // 
+            // lblTrapecioIrregular
+            // 
+            this.lblTrapecioIrregular.AutoSize = true;
+            this.lblTrapecioIrregular.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.lblTrapecioIrregular.Location = new System.Drawing.Point(79, 227);
+            this.lblTrapecioIrregular.Name = "lblTrapecioIrregular";
+            this.lblTrapecioIrregular.Size = new System.Drawing.Size(254, 25);
+            this.lblTrapecioIrregular.TabIndex = 26;
+            this.lblTrapecioIrregular.Text = "Opcional (Trapecio irregular)";
+            // 
+            // txtLateral2
+            // 
+            this.txtLateral2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtLateral2.Location = new System.Drawing.Point(236, 307);
+            this.txtLateral2.Name = "txtLateral2";
+            this.txtLateral2.Size = new System.Drawing.Size(140, 30);
+            this.txtLateral2.TabIndex = 27;
+            // 
+            // lblLateral2
+            // 
+            this.lblLateral2.AutoSize = true;
+            this.lblLateral2.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblLateral2.Location = new System.Drawing.Point(83, 307);
+            this.lblLateral2.Name = "lblLateral2";
+            this.lblLateral2.Size = new System.Drawing.Size(79, 23);
+            this.lblLateral2.TabIndex = 28;
+            this.lblLateral2.Text = "Lateral 2:";
+            // 
+            // pnlTrapecio
+            // 
+            this.pnlTrapecio.Location = new System.Drawing.Point(704, 106);
+            this.pnlTrapecio.Name = "pnlTrapecio";
+            this.pnlTrapecio.Size = new System.Drawing.Size(526, 424);
+            this.pnlTrapecio.TabIndex = 29;
+            this.pnlTrapecio.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTrapecio_Paint);
+            // 
+            // FrmTrapecio
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.pnlTrapecio);
+            this.Controls.Add(this.txtLateral2);
+            this.Controls.Add(this.lblLateral2);
+            this.Controls.Add(this.lblTrapecioIrregular);
+            this.Controls.Add(this.LblArea);
+            this.Controls.Add(this.LblPerimetro);
+            this.Controls.Add(this.LblSalida);
+            this.Controls.Add(this.BtnResetear);
+            this.Controls.Add(this.BtnSalir);
+            this.Controls.Add(this.BtnCalcular);
+            this.Controls.Add(this.LblProceso);
+            this.Controls.Add(this.LblGrafico);
+            this.Controls.Add(this.txtLateral1);
+            this.Controls.Add(this.txtAltura);
+            this.Controls.Add(this.txtBaseMay);
+            this.Controls.Add(this.txtBaseMen);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblAltura);
+            this.Controls.Add(this.LblAncho);
+            this.Controls.Add(this.lblLateral1);
+            this.Controls.Add(this.LblEntrada);
+            this.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "FrmTrapecio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Trapecio";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label LblArea;
+        private System.Windows.Forms.Label LblPerimetro;
+        private System.Windows.Forms.Label LblSalida;
+        private System.Windows.Forms.Button BtnResetear;
+        private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Button BtnCalcular;
+        private System.Windows.Forms.Label LblProceso;
+        private System.Windows.Forms.Label LblGrafico;
+        private System.Windows.Forms.TextBox txtAltura;
+        private System.Windows.Forms.TextBox txtBaseMen;
+        private System.Windows.Forms.TextBox txtLateral1;
+        private System.Windows.Forms.Label lblAltura;
+        private System.Windows.Forms.Label LblAncho;
+        private System.Windows.Forms.Label lblLateral1;
+        private System.Windows.Forms.Label LblEntrada;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBaseMay;
+        private System.Windows.Forms.Label lblTrapecioIrregular;
+        private System.Windows.Forms.TextBox txtLateral2;
+        private System.Windows.Forms.Label lblLateral2;
+        private System.Windows.Forms.Panel pnlTrapecio;
+    }
+}

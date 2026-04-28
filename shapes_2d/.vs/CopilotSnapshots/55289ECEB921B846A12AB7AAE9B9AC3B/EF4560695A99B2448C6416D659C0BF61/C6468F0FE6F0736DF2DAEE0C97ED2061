@@ -1,0 +1,246 @@
+﻿namespace shapes_2d
+{
+    partial class FrmPoligonos
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.LblArea = new System.Windows.Forms.Label();
+            this.LblPerimetro = new System.Windows.Forms.Label();
+            this.LblSalida = new System.Windows.Forms.Label();
+            this.BtnResetear = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
+            this.BtnCalcular = new System.Windows.Forms.Button();
+            this.LblProceso = new System.Windows.Forms.Label();
+            this.LblGrafico = new System.Windows.Forms.Label();
+            this.TxtAncho = new System.Windows.Forms.TextBox();
+            this.LblLargo = new System.Windows.Forms.Label();
+            this.LblAncho = new System.Windows.Forms.Label();
+            this.LblEntrada = new System.Windows.Forms.Label();
+            this.TxtNumLados = new System.Windows.Forms.TextBox();
+            this.LblNumLados = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // LblArea
+            // 
+            this.LblArea.AutoSize = true;
+            this.LblArea.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.LblArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(150)))));
+            this.LblArea.Location = new System.Drawing.Point(71, 380);
+            this.LblArea.Name = "LblArea";
+            this.LblArea.Size = new System.Drawing.Size(40, 19);
+            this.LblArea.TabIndex = 25;
+            this.LblArea.Text = "Área:";
+            // 
+            // LblPerimetro
+            // 
+            this.LblPerimetro.AutoSize = true;
+            this.LblPerimetro.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.LblPerimetro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(150)))));
+            this.LblPerimetro.Location = new System.Drawing.Point(71, 340);
+            this.LblPerimetro.Name = "LblPerimetro";
+            this.LblPerimetro.Size = new System.Drawing.Size(73, 19);
+            this.LblPerimetro.TabIndex = 24;
+            this.LblPerimetro.Text = "Perimetro:";
+            this.LblPerimetro.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // LblSalida
+            // 
+            this.LblSalida.AutoSize = true;
+            this.LblSalida.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.LblSalida.Location = new System.Drawing.Point(71, 306);
+            this.LblSalida.Name = "LblSalida";
+            this.LblSalida.Size = new System.Drawing.Size(60, 20);
+            this.LblSalida.TabIndex = 23;
+            this.LblSalida.Text = "Salidas:";
+            // 
+            // BtnResetear
+            // 
+            this.BtnResetear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.BtnResetear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnResetear.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnResetear.Location = new System.Drawing.Point(201, 243);
+            this.BtnResetear.Name = "BtnResetear";
+            this.BtnResetear.Size = new System.Drawing.Size(110, 32);
+            this.BtnResetear.TabIndex = 22;
+            this.BtnResetear.Text = "Resetear";
+            this.BtnResetear.UseVisualStyleBackColor = true;
+            this.BtnResetear.Click += new System.EventHandler(this.BtnResetear_Click);
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(68)))), ((int)(((byte)(70)))));
+            this.BtnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSalir.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnSalir.ForeColor = System.Drawing.Color.White;
+            this.BtnSalir.Location = new System.Drawing.Point(331, 243);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(110, 32);
+            this.BtnSalir.TabIndex = 21;
+            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
+            // BtnCalcular
+            // 
+            this.BtnCalcular.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.BtnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCalcular.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnCalcular.ForeColor = System.Drawing.Color.White;
+            this.BtnCalcular.Location = new System.Drawing.Point(71, 243);
+            this.BtnCalcular.Name = "BtnCalcular";
+            this.BtnCalcular.Size = new System.Drawing.Size(110, 32);
+            this.BtnCalcular.TabIndex = 20;
+            this.BtnCalcular.Text = "Calcular";
+            this.BtnCalcular.UseVisualStyleBackColor = true;
+            this.BtnCalcular.Click += new System.EventHandler(this.BtnCalcular_Click);
+            // 
+            // LblProceso
+            // 
+            this.LblProceso.AutoSize = true;
+            this.LblProceso.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.LblProceso.Location = new System.Drawing.Point(71, 206);
+            this.LblProceso.Name = "LblProceso";
+            this.LblProceso.Size = new System.Drawing.Size(67, 20);
+            this.LblProceso.TabIndex = 19;
+            this.LblProceso.Text = "Proceso:";
+            // 
+            // LblGrafico
+            // 
+            this.LblGrafico.AutoSize = true;
+            this.LblGrafico.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.LblGrafico.Location = new System.Drawing.Point(651, 48);
+            this.LblGrafico.Name = "LblGrafico";
+            this.LblGrafico.Size = new System.Drawing.Size(62, 20);
+            this.LblGrafico.TabIndex = 18;
+            this.LblGrafico.Text = "Gráfico:";
+            // 
+            // TxtAncho
+            // 
+            this.TxtAncho.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.TxtAncho.Location = new System.Drawing.Point(222, 80);
+            this.TxtAncho.Name = "TxtAncho";
+            this.TxtAncho.Size = new System.Drawing.Size(140, 25);
+            this.TxtAncho.TabIndex = 16;
+            // 
+            // LblLargo
+            // 
+            this.LblLargo.AutoSize = true;
+            this.LblLargo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.LblLargo.Location = new System.Drawing.Point(71, 123);
+            this.LblLargo.Name = "LblLargo";
+            this.LblLargo.Size = new System.Drawing.Size(0, 19);
+            this.LblLargo.TabIndex = 15;
+            this.LblLargo.Visible = false;
+            // 
+            // LblAncho
+            // 
+            this.LblAncho.AutoSize = true;
+            this.LblAncho.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.LblAncho.Location = new System.Drawing.Point(71, 80);
+            this.LblAncho.Name = "LblAncho";
+            this.LblAncho.Size = new System.Drawing.Size(61, 19);
+            this.LblAncho.TabIndex = 14;
+            this.LblAncho.Text = "Lado (a):";
+            // 
+            // LblEntrada
+            // 
+            this.LblEntrada.AutoSize = true;
+            this.LblEntrada.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.LblEntrada.Location = new System.Drawing.Point(71, 48);
+            this.LblEntrada.Name = "LblEntrada";
+            this.LblEntrada.Size = new System.Drawing.Size(66, 20);
+            this.LblEntrada.TabIndex = 13;
+            this.LblEntrada.Text = "Entrada:";
+            // 
+            // TxtNumLados
+            // 
+            this.TxtNumLados.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.TxtNumLados.Location = new System.Drawing.Point(222, 120);
+            this.TxtNumLados.Name = "TxtNumLados";
+            this.TxtNumLados.Size = new System.Drawing.Size(140, 25);
+            this.TxtNumLados.TabIndex = 27;
+            // 
+            // LblNumLados
+            // 
+            this.LblNumLados.AutoSize = true;
+            this.LblNumLados.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.LblNumLados.Location = new System.Drawing.Point(70, 123);
+            this.LblNumLados.Name = "LblNumLados";
+            this.LblNumLados.Size = new System.Drawing.Size(137, 19);
+            this.LblNumLados.TabIndex = 26;
+            this.LblNumLados.Text = "Numero de lados (b):";
+            // 
+            // FrmPoligonos
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(980, 525);
+            this.Controls.Add(this.TxtNumLados);
+            this.Controls.Add(this.LblNumLados);
+            this.Controls.Add(this.LblArea);
+            this.Controls.Add(this.LblPerimetro);
+            this.Controls.Add(this.LblSalida);
+            this.Controls.Add(this.BtnResetear);
+            this.Controls.Add(this.BtnSalir);
+            this.Controls.Add(this.BtnCalcular);
+            this.Controls.Add(this.LblProceso);
+            this.Controls.Add(this.LblGrafico);
+            this.Controls.Add(this.TxtAncho);
+            this.Controls.Add(this.LblLargo);
+            this.Controls.Add(this.LblAncho);
+            this.Controls.Add(this.LblEntrada);
+            this.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "FrmPoligonos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Polígonos";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.FrmHexagono_Paint);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label LblArea;
+        private System.Windows.Forms.Label LblPerimetro;
+        private System.Windows.Forms.Label LblSalida;
+        private System.Windows.Forms.Button BtnResetear;
+        private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Button BtnCalcular;
+        private System.Windows.Forms.Label LblProceso;
+        private System.Windows.Forms.Label LblGrafico;
+        private System.Windows.Forms.TextBox TxtAncho;
+        private System.Windows.Forms.Label LblLargo;
+        private System.Windows.Forms.Label LblAncho;
+        private System.Windows.Forms.Label LblEntrada;
+        private System.Windows.Forms.TextBox TxtNumLados;
+        private System.Windows.Forms.Label LblNumLados;
+    }
+}
