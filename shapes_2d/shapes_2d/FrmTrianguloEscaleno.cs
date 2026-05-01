@@ -1,0 +1,204 @@
+using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Linq;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmTrianguloEscaleno : Form
+    {
+        public FrmTrianguloEscaleno()
+        {
+            InitializeComponent();
+        }
+
+        double lado1, lado2, lado3;
+
+        private void VerificaYMuestraRecomendacion()
+        {
+            bool tieneAncho = double.TryParse(txtLadoA.Text, out double a) && a > 0;
+            bool tieneLargo = double.TryParse(txtLadoB.Text, out double b) && b > 0;
+            bool tieneAltura = double.TryParse(txtLadoC.Text, out double c) && c > 0;
+
+            int valoresIngresados = (tieneAncho ? 1 : 0) + (tieneLargo ? 1 : 0) + (tieneAltura ? 1 : 0);
+
+            if (valoresIngresados == 2)
+            {
+                string recomendacion = "";
+
+                if (tieneAncho && tieneLargo && !tieneAltura)
+                {
+                    double minAltura = Math.Abs(a - b);
+                    double maxAltura = a + b;
+                    recomendacion = $"Lado (c) debe estar entre {minAltura:F2} y {maxAltura:F2}";
+                }
+                else if (tieneAncho && tieneAltura && !tieneLargo)
+                {
+                    double minLargo = Math.Abs(a - c);
+                    double maxLargo = a + c;
+                    recomendacion = $"Lado (b) debe estar entre {minLargo:F2} y {maxLargo:F2}";
+                }
+                else if (tieneLargo && tieneAltura && !tieneAncho)
+                {
+                    double minAncho = Math.Abs(b - c);
+                    double maxAncho = b + c;
+                    recomendacion = $"Lado (a) debe estar entre {minAncho:F2} y {maxAncho:F2}";
+                }
+
+                LblRecomendacion.Text = recomendacion;
+            }
+            else
+            {
+                LblRecomendacion.Text = "";
+            }
+        }
+
+        private void Txt_TextChanged(object sender, EventArgs e)
+        {
+            VerificaYMuestraRecomendacion();
+        }
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(txtLadoA.Text, out lado1) || lado1 <= 0)
+            {
+                MessageBox.Show("Lado (a) debe ser un número válido mayor a 0");
+                return;
+            }
+
+            if (!double.TryParse(txtLadoB.Text, out lado2) || lado2 <= 0)
+            {
+                MessageBox.Show("Lado (b) debe ser un número válido mayor a 0");
+                return;
+            }
+
+            if (!double.TryParse(txtLadoC.Text, out lado3) || lado3 <= 0)
+            {
+                MessageBox.Show("Lado (c) debe ser un número válido mayor a 0");
+                return;
+            }
+
+            if (!EsTrianguloValido(lado1, lado2, lado3))
+            {
+                MessageBox.Show("Los lados ingresados no forman un triángulo válido.\nRecuerda: la suma de dos lados debe ser mayor que el tercero");
+                return;
+            }
+
+            // Verificar que no sea isósceles ni equilátero
+            double tolerancia = 0.01;
+            bool esIsosceles = (Math.Abs(lado1 - lado2) < tolerancia) || 
+                               (Math.Abs(lado1 - lado3) < tolerancia) || 
+                               (Math.Abs(lado2 - lado3) < tolerancia);
+
+            if (esIsosceles)
+            {
+                MessageBox.Show("Los lados forman un triángulo isósceles o equilátero, no escaleno.\nUn triángulo escaleno debe tener todos sus lados diferentes.");
+                return;
+            }
+
+            pnlTriangulo.Invalidate();
+
+            double perimetro = lado1 + lado2 + lado3;
+
+            double s = perimetro / 2;
+            double area = Math.Sqrt(s * (s - lado1) * (s - lado2) * (s - lado3));
+
+            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            LblArea.Text = $"Área: {area:F2}";
+        }
+
+        private bool EsTrianguloValido(double a, double b, double c)
+        {
+            return (a + b > c) && (a + c > b) && (b + c > a);
+        }
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+            txtLadoA.Text = "";
+            txtLadoB.Text = "";
+            txtLadoC.Text = "";
+
+            LblPerimetro.Text = "Perimetro:";
+            LblArea.Text = "Área:";
+
+            lado1 = 0;
+            lado2 = 0;
+            lado3 = 0;
+
+            pnlTriangulo.Invalidate();
+        }
+
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pnlTriangulo_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+
+            // Clear panel background
+            g.Clear(pnlTriangulo.BackColor);
+
+            if (lado1 > 0 && lado2 > 0 && lado3 > 0)
+            {
+                // Use panel client rectangle as drawing bounds
+                Rectangle panelBounds = pnlTriangulo.ClientRectangle;
+                RectangleF bounds = new RectangleF(panelBounds.X, panelBounds.Y, panelBounds.Width, panelBounds.Height);
+                const float padding = 16f;
+
+                double angleCos = (lado1 * lado1 + lado2 * lado2 - lado3 * lado3) / (2 * lado1 * lado2);
+                angleCos = Math.Max(-1d, Math.Min(1d, angleCos));
+                double angle = Math.Acos(angleCos);
+
+                PointF[] points =
+                {
+                    new PointF(0f, 0f),
+                    new PointF((float)lado1, 0f),
+                    new PointF((float)(lado2 * Math.Cos(angle)), (float)(lado2 * Math.Sin(angle)))
+                };
+
+                float minX = points.Min(p => p.X);
+                float minY = points.Min(p => p.Y);
+                float maxX = points.Max(p => p.X);
+                float maxY = points.Max(p => p.Y);
+
+                float width = maxX - minX;
+                float height = maxY - minY;
+
+                if (width <= 0f || height <= 0f)
+                {
+                    return;
+                }
+
+                float scale = Math.Min((bounds.Width - padding * 2f) / width, (bounds.Height - padding * 2f) / height);
+                scale = Math.Max(0.1f, Math.Min(1f, scale)); // cap scale at 1f so it doesn't upscale beyond actual size
+
+                float offsetX = bounds.X + (bounds.Width - width * scale) / 2f;
+                float offsetY = bounds.Y + (bounds.Height - height * scale) / 2f;
+
+                for (int i = 0; i < points.Length; i++)
+                {
+                    points[i] = new PointF(
+                        offsetX + (points[i].X - minX) * scale,
+                        offsetY + (points[i].Y - minY) * scale);
+                }
+
+                using (Pen pen = new Pen(Color.Purple, 2))
+                {
+                    g.DrawPolygon(pen, points);
+                }
+
+                // Optional: draw bounds reference
+                using (Pen boundsPen = new Pen(Color.FromArgb(80, Color.Gray), 1))
+                {
+                    boundsPen.DashStyle = DashStyle.Dash;
+                    g.DrawRectangle(boundsPen, 0, 0, bounds.Width - 1, bounds.Height - 1);
+                }
+            }
+        }
+    }
+}
