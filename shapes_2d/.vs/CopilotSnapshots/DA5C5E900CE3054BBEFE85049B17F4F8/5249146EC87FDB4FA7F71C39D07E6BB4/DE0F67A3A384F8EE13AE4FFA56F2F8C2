@@ -1,0 +1,79 @@
+﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmCruz : Form
+    {
+        private double tamaño;
+
+        public FrmCruz()
+        {
+            InitializeComponent();
+        }
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(TxtTamaño.Text, out tamaño) || tamaño <= 0)
+            {
+                MessageBox.Show("Tamaño debe ser un número válido mayor a 0");
+                return;
+            }
+
+            // Calcular área y perímetro de la cruz
+            // Una cruz se compone de 5 cuadrados
+            double areaTotal = 5 * tamaño * tamaño;
+            // Perímetro de una cruz: 12 lados de tamaño
+            double perimetro = 12 * tamaño;
+
+            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            LblArea.Text = $"Área: {areaTotal:F2}";
+
+            pnlCruz.Invalidate();
+        }
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+            TxtTamaño.Text = "";
+            LblPerimetro.Text = "Perimetro:";
+            LblArea.Text = "Área:";
+            tamaño = 0;
+            pnlCruz.Invalidate();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pnlCruz_Paint(object sender, PaintEventArgs e)
+        {
+            if (tamaño <= 0)
+            {
+                return;
+            }
+
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+
+            using (Pen pen = new Pen(Color.Black, 2))
+            using (Brush fill = new SolidBrush(Color.FromArgb(150, Color.DeepSkyBlue)))
+            {
+                float size = (float)tamaño * 10f;
+                float x = 700f;
+                float y = 150f;
+
+                // Dibujar los 5 rectángulos que forman la cruz
+                // Rectángulo vertical (centro)
+                g.FillRectangle(fill, x + size, y, size, size * 3);
+                g.DrawRectangle(pen, x + size, y, size, size * 3);
+
+                // Rectángulo horizontal (centro)
+                g.FillRectangle(fill, x, y + size, size * 3, size);
+                g.DrawRectangle(pen, x, y + size, size * 3, size);
+            }
+        }
+    }
+}

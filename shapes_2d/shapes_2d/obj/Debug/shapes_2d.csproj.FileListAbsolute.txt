@@ -46,3 +46,7 @@ C:\Users\jcbla\Desktop\ESPE\Sexto Semestre\Computacion Grafica\COMPUTACION-GRAFI
 C:\Users\jcbla\Desktop\ESPE\Sexto Semestre\Computacion Grafica\COMPUTACION-GRAFICA\shapes_2d\shapes_2d\obj\Debug\shapes_2d.FrmCuadrado.resources
 C:\Users\jcbla\Desktop\ESPE\Sexto Semestre\Computacion Grafica\COMPUTACION-GRAFICA\shapes_2d\shapes_2d\obj\Debug\shapes_2d.FrmTrapecio.resources
 C:\Users\jcbla\Desktop\ESPE\Sexto Semestre\Computacion Grafica\COMPUTACION-GRAFICA\shapes_2d\shapes_2d\obj\Debug\shapes_2d.FrmTriangulo.resources
+C:\Users\jcbla\Desktop\ESPE\Sexto Semestre\Computacion Grafica\COMPUTACION-GRAFICA\shapes_2d\shapes_2d\obj\Debug\shapes_2d.FrmTrianguloRectangulo.resources
+C:\Users\jcbla\Desktop\ESPE\Sexto Semestre\Computacion Grafica\COMPUTACION-GRAFICA\shapes_2d\shapes_2d\obj\Debug\shapes_2d.FrmCruz.resources
+C:\Users\jcbla\Desktop\ESPE\Sexto Semestre\Computacion Grafica\COMPUTACION-GRAFICA\shapes_2d\shapes_2d\obj\Debug\shapes_2d.FrmFlecha.resources
+C:\Users\jcbla\Desktop\ESPE\Sexto Semestre\Computacion Grafica\COMPUTACION-GRAFICA\shapes_2d\shapes_2d\obj\Debug\shapes_2d.FrmPastel.resources

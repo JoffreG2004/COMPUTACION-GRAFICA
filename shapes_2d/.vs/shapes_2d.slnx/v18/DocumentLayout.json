@@ -3,32 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmtriangulorectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtriangulorectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmcruz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmcruz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmtriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmcruz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmcruz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmtrianguloescaleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtrianguloescaleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmcruz.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmcruz.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmtrianguloescaleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtrianguloescaleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmpastel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmpastel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmtriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmflecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmflecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmflecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmflecha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmcruz.resx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmcruz.resx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmhome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\frmtrianguloescaleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtrianguloescaleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmtriangulorectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtriangulorectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\frmtriangulorectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtriangulorectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\frmtriangulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtriangulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\frmtriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\frmtrianguloescaleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtrianguloescaleno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\frmtriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtriangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\frmcuadrado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,24 +79,40 @@
       "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmcuadrado.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmtriangulorectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtriangulorectangulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\frmtrianguloescaleno.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtrianguloescaleno.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\frmhome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmhome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmtriangulorectangulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtriangulorectangulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmtrianguloescaleno.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtrianguloescaleno.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmtriangulorectangulo.resx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtriangulorectangulo.resx||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmhome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmhome.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmpastel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmpastel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmtriangulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmtriangulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmpastel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmpastel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmpastel.resx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmpastel.resx||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmflecha.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmflecha.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|c:\\users\\jcbla\\desktop\\espe\\sexto semestre\\computacion grafica\\computacion-grafica\\shapes_2d\\shapes_2d\\frmflecha.resx||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{5B9D4493-8695-4744-8D23-8795D6D6D7F6}|shapes_2d\\shapes_2d.csproj|solutionrelative:shapes_2d\\frmflecha.resx||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,7 +122,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,7 +134,209 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
+              "Title": "FrmCruz.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmCruz.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmCruz.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmCruz.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmCruz.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T21:13:42.616Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmFlecha.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmFlecha.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmFlecha.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmFlecha.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmFlecha.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T21:13:08.925Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmPastel.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmPastel.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmPastel.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmPastel.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmPastel.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T21:12:13.036Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmCruz.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmCruz.Designer.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmCruz.Designer.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmCruz.Designer.cs",
+              "RelativeToolTip": "shapes_2d\\FrmCruz.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T20:20:23.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmCruz.cs",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmCruz.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmCruz.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmCruz.cs",
+              "RelativeToolTip": "shapes_2d\\FrmCruz.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAiwGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T20:20:08.19Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmHome.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmHome.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmHome.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T01:57:59.969Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FrmHome.cs",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmHome.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.cs",
+              "RelativeToolTip": "shapes_2d\\FrmHome.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAIwIUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-28T01:58:27.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmFlecha.cs",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmFlecha.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmFlecha.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmFlecha.cs",
+              "RelativeToolTip": "shapes_2d\\FrmFlecha.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAADgv3UAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T20:21:05.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmCruz.resx",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmCruz.resx",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmCruz.resx",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmCruz.resx",
+              "RelativeToolTip": "shapes_2d\\FrmCruz.resx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-02T20:20:27.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FrmFlecha.resx",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmFlecha.resx",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmFlecha.resx",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmFlecha.resx",
+              "RelativeToolTip": "shapes_2d\\FrmFlecha.resx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-02T20:21:26.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "FrmFlecha.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmFlecha.Designer.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmFlecha.Designer.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmFlecha.Designer.cs",
+              "RelativeToolTip": "shapes_2d\\FrmFlecha.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T20:21:22.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FrmPastel.resx",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmPastel.resx",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmPastel.resx",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmPastel.resx",
+              "RelativeToolTip": "shapes_2d\\FrmPastel.resx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-02T20:20:56.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FrmPastel.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmPastel.Designer.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmPastel.Designer.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmPastel.Designer.cs",
+              "RelativeToolTip": "shapes_2d\\FrmPastel.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T20:20:52.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FrmPastel.cs",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmPastel.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmPastel.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmPastel.cs",
+              "RelativeToolTip": "shapes_2d\\FrmPastel.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAIBJwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T20:20:35.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FrmTrianguloEscaleno.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloEscaleno.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmTrianguloEscaleno.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloEscaleno.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmTrianguloEscaleno.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T04:11:45.683Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FrmTrianguloRectangulo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloRectangulo.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmTrianguloRectangulo.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloRectangulo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmTrianguloRectangulo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-02T20:03:21.313Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "FrmTriangulo.Designer.cs",
               "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTriangulo.Designer.cs",
               "RelativeDocumentMoniker": "shapes_2d\\FrmTriangulo.Designer.cs",
@@ -95,69 +349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FrmTrianguloRectangulo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloRectangulo.cs",
-              "RelativeDocumentMoniker": "shapes_2d\\FrmTrianguloRectangulo.cs",
-              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloRectangulo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "shapes_2d\\FrmTrianguloRectangulo.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T04:11:48.377Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FrmTrianguloEscaleno.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloEscaleno.cs",
-              "RelativeDocumentMoniker": "shapes_2d\\FrmTrianguloEscaleno.cs",
-              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloEscaleno.cs [Dise\u00F1o]",
-              "RelativeToolTip": "shapes_2d\\FrmTrianguloEscaleno.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T04:11:45.683Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmTriangulo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTriangulo.cs",
-              "RelativeDocumentMoniker": "shapes_2d\\FrmTriangulo.cs",
-              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTriangulo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "shapes_2d\\FrmTriangulo.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T03:50:31.828Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrmTrianguloEscaleno.cs",
-              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloEscaleno.cs",
-              "RelativeDocumentMoniker": "shapes_2d\\FrmTrianguloEscaleno.cs",
-              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloEscaleno.cs",
-              "RelativeToolTip": "shapes_2d\\FrmTrianguloEscaleno.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T03:57:12.383Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "FrmHome.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.Designer.cs",
-              "RelativeDocumentMoniker": "shapes_2d\\FrmHome.Designer.cs",
-              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.Designer.cs",
-              "RelativeToolTip": "shapes_2d\\FrmHome.Designer.cs",
-              "ViewState": "AgIAAFoBAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T03:58:19.109Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 21,
               "Title": "FrmTrianguloRectangulo.Designer.cs",
               "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloRectangulo.Designer.cs",
               "RelativeDocumentMoniker": "shapes_2d\\FrmTrianguloRectangulo.Designer.cs",
@@ -165,12 +357,12 @@
               "RelativeToolTip": "shapes_2d\\FrmTrianguloRectangulo.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T03:56:56.465Z",
+              "WhenOpened": "2026-05-02T20:00:10.145Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "FrmTrianguloRectangulo.cs",
               "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloRectangulo.cs",
               "RelativeDocumentMoniker": "shapes_2d\\FrmTrianguloRectangulo.cs",
@@ -183,7 +375,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 22,
+              "Title": "FrmTrianguloRectangulo.resx",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloRectangulo.resx",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmTrianguloRectangulo.resx",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloRectangulo.resx",
+              "RelativeToolTip": "shapes_2d\\FrmTrianguloRectangulo.resx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2026-05-02T20:00:16.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FrmTriangulo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTriangulo.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmTriangulo.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTriangulo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "shapes_2d\\FrmTriangulo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T03:50:31.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FrmTrianguloEscaleno.cs",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloEscaleno.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmTrianguloEscaleno.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloEscaleno.cs",
+              "RelativeToolTip": "shapes_2d\\FrmTrianguloEscaleno.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T03:57:12.383Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FrmHome.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.Designer.cs",
+              "RelativeDocumentMoniker": "shapes_2d\\FrmHome.Designer.cs",
+              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.Designer.cs",
+              "RelativeToolTip": "shapes_2d\\FrmHome.Designer.cs",
+              "ViewState": "AgIAAFoBAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-01T03:58:19.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
               "Title": "FrmTriangulo.cs",
               "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTriangulo.cs",
               "RelativeDocumentMoniker": "shapes_2d\\FrmTriangulo.cs",
@@ -191,12 +433,11 @@
               "RelativeToolTip": "shapes_2d\\FrmTriangulo.cs",
               "ViewState": "AgIAAK8AAAAAAAAAAAAwwD8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-01T03:52:01.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-01T03:52:01.908Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "FrmTrianguloEscaleno.Designer.cs",
               "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmTrianguloEscaleno.Designer.cs",
               "RelativeDocumentMoniker": "shapes_2d\\FrmTrianguloEscaleno.Designer.cs",
@@ -209,31 +450,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FrmHome.cs",
-              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.cs",
-              "RelativeDocumentMoniker": "shapes_2d\\FrmHome.cs",
-              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.cs",
-              "RelativeToolTip": "shapes_2d\\FrmHome.cs",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAqwHEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T01:58:27.958Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FrmHome.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.cs",
-              "RelativeDocumentMoniker": "shapes_2d\\FrmHome.cs",
-              "ToolTip": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmHome.cs [Dise\u00F1o]",
-              "RelativeToolTip": "shapes_2d\\FrmHome.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-28T01:57:59.969Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "FrmCuadrado.cs",
               "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmCuadrado.cs",
               "RelativeDocumentMoniker": "shapes_2d\\FrmCuadrado.cs",
@@ -245,7 +462,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "FrmCuadrado.Designer.cs",
               "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmCuadrado.Designer.cs",
               "RelativeDocumentMoniker": "shapes_2d\\FrmCuadrado.Designer.cs",
@@ -257,7 +474,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "FrmCuadrado.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\jcbla\\Desktop\\ESPE\\Sexto Semestre\\Computacion Grafica\\COMPUTACION-GRAFICA\\shapes_2d\\shapes_2d\\FrmCuadrado.cs",
               "RelativeDocumentMoniker": "shapes_2d\\FrmCuadrado.cs",

@@ -33,7 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -64,6 +66,12 @@
     <Compile Include="FrmCorazon.Designer.cs">
       <DependentUpon>FrmCorazon.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCruz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCruz.Designer.cs">
+      <DependentUpon>FrmCruz.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmElipse.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +83,12 @@
     </Compile>
     <Compile Include="FrmEstrella.Designer.cs">
       <DependentUpon>FrmEstrella.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFlecha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFlecha.Designer.cs">
+      <DependentUpon>FrmFlecha.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmHexagono.cs">
       <SubType>Form</SubType>
@@ -105,6 +119,12 @@
     </Compile>
     <Compile Include="FrmOvalo.Designer.cs">
       <DependentUpon>FrmOvalo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPastel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPastel.Designer.cs">
+      <DependentUpon>FrmPastel.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmTrapecio.cs">
       <SubType>Form</SubType>
@@ -165,11 +185,17 @@
     <EmbeddedResource Include="FrmCorazon.resx">
       <DependentUpon>FrmCorazon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmCruz.resx">
+      <DependentUpon>FrmCruz.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmElipse.resx">
       <DependentUpon>FrmElipse.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEstrella.resx">
       <DependentUpon>FrmEstrella.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFlecha.resx">
+      <DependentUpon>FrmFlecha.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHexagono.resx">
       <DependentUpon>FrmHexagono.cs</DependentUpon>
@@ -185,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOvalo.resx">
       <DependentUpon>FrmOvalo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPastel.resx">
+      <DependentUpon>FrmPastel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTrapecio.resx">
       <DependentUpon>FrmTrapecio.cs</DependentUpon>

@@ -1,0 +1,116 @@
+using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmPastel : Form
+    {
+        private double radio;
+        private double porcentaje;
+
+        public FrmPastel()
+        {
+            InitializeComponent();
+        }
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(TxtRadio.Text, out radio) || radio <= 0)
+            {
+                MessageBox.Show("Radio debe ser un número válido mayor a 0");
+                return;
+            }
+
+            if (!double.TryParse(TxtPorcentaje.Text, out porcentaje) || porcentaje <= 0 || porcentaje > 100)
+            {
+                MessageBox.Show("Porcentaje debe estar entre 0 y 100");
+                return;
+            }
+
+            double areaTotal = Math.PI * radio * radio;
+            double areaPastel = (areaTotal * porcentaje) / 100.0;
+            double perimetro = (2 * Math.PI * radio * porcentaje) / 100.0 + 2 * radio;
+
+            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            LblArea.Text = $"Área: {areaPastel:F2}";
+
+            pnlPastel.Invalidate();
+        }
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+            TxtRadio.Text = "";
+            TxtPorcentaje.Text = "";
+            LblPerimetro.Text = "Perimetro:";
+            LblArea.Text = "Área:";
+            radio = 0;
+            porcentaje = 0;
+            pnlPastel.Invalidate();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pnlPastel_Paint(object sender, PaintEventArgs e)
+        {
+            if (radio <= 0 || porcentaje <= 0)
+            {
+                return;
+            }
+
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+
+            // Clear panel background
+            g.Clear(pnlPastel.BackColor);
+
+            // Use panel client rectangle as drawing bounds
+            Rectangle panelBounds = pnlPastel.ClientRectangle;
+            RectangleF bounds = new RectangleF(panelBounds.X, panelBounds.Y, panelBounds.Width, panelBounds.Height);
+            const float padding = 16f;
+
+            float diameter = (float)radio * 2f;
+
+            if (diameter <= 0f)
+            {
+                return;
+            }
+
+            float scale = Math.Min((bounds.Width - padding * 2f) / diameter, (bounds.Height - padding * 2f) / diameter);
+            scale = Math.Max(0.1f, scale);
+
+            float scaledDiameter = diameter * scale;
+            float offsetX = bounds.X + (bounds.Width - scaledDiameter) / 2f;
+            float offsetY = bounds.Y + (bounds.Height - scaledDiameter) / 2f;
+
+            using (Pen pen = new Pen(Color.Black, 2))
+            using (Brush fill = new SolidBrush(Color.FromArgb(180, Color.BurlyWood)))
+            {
+                float startAngle = 0f;
+                float sweepAngle = (float)((porcentaje / 100.0) * 360.0);
+
+                g.FillPie(fill, offsetX, offsetY, scaledDiameter, scaledDiameter, startAngle, sweepAngle);
+                g.DrawPie(pen, offsetX, offsetY, scaledDiameter, scaledDiameter, startAngle, sweepAngle);
+
+                // Dibujar líneas del pastel
+                float centerX = offsetX + scaledDiameter / 2f;
+                float centerY = offsetY + scaledDiameter / 2f;
+                double radians = Math.PI * (startAngle / 180.0);
+                float endX = centerX + (float)(Math.Cos(radians) * scaledDiameter / 2f);
+                float endY = centerY + (float)(Math.Sin(radians) * scaledDiameter / 2f);
+
+                g.DrawLine(pen, centerX, centerY, endX, endY);
+
+                radians = Math.PI * ((startAngle + sweepAngle) / 180.0);
+                endX = centerX + (float)(Math.Cos(radians) * scaledDiameter / 2f);
+                endY = centerY + (float)(Math.Sin(radians) * scaledDiameter / 2f);
+
+                g.DrawLine(pen, centerX, centerY, endX, endY);
+            }
+        }
+    }
+}

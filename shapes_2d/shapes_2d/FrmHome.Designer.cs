@@ -42,6 +42,8 @@
             this.polígonosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.triánguloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.triánguloToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.triánguloRectanguloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.triánguloEscalenoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuadriláteroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cuadradoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cometaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,8 +57,9 @@
             this.corazónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lunaCrecienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RectangulotoolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.triánguloRectanguloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.triánguloEscalenoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cruzToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.flechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.circuloParcialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +77,7 @@
             this.figuratoolStripMenuItem2});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(970, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1280, 31);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -182,6 +185,20 @@
             this.triánguloToolStripMenuItem1.Text = "Triángulo";
             this.triánguloToolStripMenuItem1.Click += new System.EventHandler(this.triánguloToolStripMenuItem1_Click);
             // 
+            // triánguloRectanguloToolStripMenuItem
+            // 
+            this.triánguloRectanguloToolStripMenuItem.Name = "triánguloRectanguloToolStripMenuItem";
+            this.triánguloRectanguloToolStripMenuItem.Size = new System.Drawing.Size(265, 28);
+            this.triánguloRectanguloToolStripMenuItem.Text = "Triángulo Rectangulo";
+            this.triánguloRectanguloToolStripMenuItem.Click += new System.EventHandler(this.triánguloRectanguloToolStripMenuItem_Click);
+            // 
+            // triánguloEscalenoToolStripMenuItem
+            // 
+            this.triánguloEscalenoToolStripMenuItem.Name = "triánguloEscalenoToolStripMenuItem";
+            this.triánguloEscalenoToolStripMenuItem.Size = new System.Drawing.Size(265, 28);
+            this.triánguloEscalenoToolStripMenuItem.Text = "Triángulo Escaleno";
+            this.triánguloEscalenoToolStripMenuItem.Click += new System.EventHandler(this.triánguloEscalenoToolStripMenuItem_Click);
+            // 
             // cuadriláteroToolStripMenuItem
             // 
             this.cuadriláteroToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -247,8 +264,11 @@
             // figurasExtrañasToolStripMenuItem
             // 
             this.figurasExtrañasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.estrellaToolStripMenuItem,
+            this.cruzToolStripMenuItem,
+            this.circuloParcialToolStripMenuItem,
             this.corazónToolStripMenuItem,
+            this.estrellaToolStripMenuItem,
+            this.flechaToolStripMenuItem,
             this.lunaCrecienteToolStripMenuItem});
             this.figurasExtrañasToolStripMenuItem.Name = "figurasExtrañasToolStripMenuItem";
             this.figurasExtrañasToolStripMenuItem.Size = new System.Drawing.Size(243, 28);
@@ -257,21 +277,21 @@
             // estrellaToolStripMenuItem
             // 
             this.estrellaToolStripMenuItem.Name = "estrellaToolStripMenuItem";
-            this.estrellaToolStripMenuItem.Size = new System.Drawing.Size(212, 28);
+            this.estrellaToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.estrellaToolStripMenuItem.Text = "Estrella";
             this.estrellaToolStripMenuItem.Click += new System.EventHandler(this.estrellaToolStripMenuItem_Click);
             // 
             // corazónToolStripMenuItem
             // 
             this.corazónToolStripMenuItem.Name = "corazónToolStripMenuItem";
-            this.corazónToolStripMenuItem.Size = new System.Drawing.Size(212, 28);
+            this.corazónToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.corazónToolStripMenuItem.Text = "Corazón";
             this.corazónToolStripMenuItem.Click += new System.EventHandler(this.corazónToolStripMenuItem_Click);
             // 
             // lunaCrecienteToolStripMenuItem
             // 
             this.lunaCrecienteToolStripMenuItem.Name = "lunaCrecienteToolStripMenuItem";
-            this.lunaCrecienteToolStripMenuItem.Size = new System.Drawing.Size(212, 28);
+            this.lunaCrecienteToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.lunaCrecienteToolStripMenuItem.Text = "Luna Creciente";
             this.lunaCrecienteToolStripMenuItem.Click += new System.EventHandler(this.lunaCrecienteToolStripMenuItem_Click);
             // 
@@ -281,19 +301,26 @@
             this.RectangulotoolStripMenuItem2.Size = new System.Drawing.Size(224, 26);
             this.RectangulotoolStripMenuItem2.Text = "Rectangulo";
             // 
-            // triánguloRectanguloToolStripMenuItem
+            // cruzToolStripMenuItem
             // 
-            this.triánguloRectanguloToolStripMenuItem.Name = "triánguloRectanguloToolStripMenuItem";
-            this.triánguloRectanguloToolStripMenuItem.Size = new System.Drawing.Size(265, 28);
-            this.triánguloRectanguloToolStripMenuItem.Text = "Triángulo Rectangulo";
-            this.triánguloRectanguloToolStripMenuItem.Click += new System.EventHandler(this.triánguloRectanguloToolStripMenuItem_Click);
+            this.cruzToolStripMenuItem.Name = "cruzToolStripMenuItem";
+            this.cruzToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.cruzToolStripMenuItem.Text = "Cruz";
+            this.cruzToolStripMenuItem.Click += new System.EventHandler(this.cruzToolStripMenuItem_Click);
             // 
-            // triánguloEscalenoToolStripMenuItem
+            // flechaToolStripMenuItem
             // 
-            this.triánguloEscalenoToolStripMenuItem.Name = "triánguloEscalenoToolStripMenuItem";
-            this.triánguloEscalenoToolStripMenuItem.Size = new System.Drawing.Size(265, 28);
-            this.triánguloEscalenoToolStripMenuItem.Text = "Triángulo Escaleno";
-            this.triánguloEscalenoToolStripMenuItem.Click += new System.EventHandler(this.triánguloEscalenoToolStripMenuItem_Click);
+            this.flechaToolStripMenuItem.Name = "flechaToolStripMenuItem";
+            this.flechaToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.flechaToolStripMenuItem.Text = "Flecha";
+            this.flechaToolStripMenuItem.Click += new System.EventHandler(this.flechaToolStripMenuItem_Click);
+            // 
+            // circuloParcialToolStripMenuItem
+            // 
+            this.circuloParcialToolStripMenuItem.Name = "circuloParcialToolStripMenuItem";
+            this.circuloParcialToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.circuloParcialToolStripMenuItem.Text = "Circulo Parcial";
+            this.circuloParcialToolStripMenuItem.Click += new System.EventHandler(this.circuloParcialToolStripMenuItem_Click);
             // 
             // FrmHome
             // 
@@ -307,7 +334,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.WindowState = System.Windows.Forms.FormWindowState.Normal;
             this.Text = "Home";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -347,5 +373,8 @@
         private System.Windows.Forms.ToolStripMenuItem triánguloToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem triánguloRectanguloToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem triánguloEscalenoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cruzToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem flechaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem circuloParcialToolStripMenuItem;
     }
 }

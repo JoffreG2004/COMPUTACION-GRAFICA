@@ -1,0 +1,97 @@
+﻿using System;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Windows.Forms;
+
+namespace shapes_2d
+{
+    public partial class FrmFlecha : Form
+    {
+        private double ancho;
+        private double largo;
+
+        public FrmFlecha()
+        {
+            InitializeComponent();
+        }
+
+        private void BtnCalcular_Click(object sender, EventArgs e)
+        {
+            if (!double.TryParse(TxtAncho.Text, out ancho) || ancho <= 0)
+            {
+                MessageBox.Show("Ancho debe ser un número válido mayor a 0");
+                return;
+            }
+
+            if (!double.TryParse(TxtLargo.Text, out largo) || largo <= 0)
+            {
+                MessageBox.Show("Largo debe ser un número válido mayor a 0");
+                return;
+            }
+
+            // Calcular área y perímetro aproximado de la flecha
+            double areaRectangulo = ancho * (largo * 0.6);
+            double areaTriangulo = (ancho * 0.4 * largo) / 2.0;
+            double areaTotal = areaRectangulo + areaTriangulo;
+
+            double perimetro = ancho * 2 + largo * 2 + Math.Sqrt(ancho * ancho + (largo * 0.4) * (largo * 0.4));
+
+            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            LblArea.Text = $"Área: {areaTotal:F2}";
+
+            pnlFlecha.Invalidate();
+        }
+
+        private void BtnResetear_Click(object sender, EventArgs e)
+        {
+            TxtAncho.Text = "";
+            TxtLargo.Text = "";
+            LblPerimetro.Text = "Perimetro:";
+            LblArea.Text = "Área:";
+            ancho = 0;
+            largo = 0;
+            pnlFlecha.Invalidate();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void pnlFlecha_Paint(object sender, PaintEventArgs e)
+        {
+            if (ancho <= 0 || largo <= 0)
+            {
+                return;
+            }
+
+            Graphics g = e.Graphics;
+            g.SmoothingMode = SmoothingMode.AntiAlias;
+
+            using (Pen pen = new Pen(Color.Black, 2))
+            using (Brush fill = new SolidBrush(Color.FromArgb(150, Color.DeepSkyBlue)))
+            {
+                float width = (float)ancho * 10f;
+                float height = (float)largo * 10f;
+                float x = 700f;
+                float y = 150f;
+
+                // Dibujar el cuerpo de la flecha (rectángulo)
+                float bodyHeight = height * 0.6f;
+                g.FillRectangle(fill, x, y + (height - bodyHeight) / 2f, width * 0.7f, bodyHeight);
+                g.DrawRectangle(pen, x, y + (height - bodyHeight) / 2f, width * 0.7f, bodyHeight);
+
+                // Dibujar la punta de la flecha (triángulo)
+                PointF[] arrowHead = new PointF[]
+                {
+                    new PointF(x + width * 0.7f, y + (height - bodyHeight) / 2f),
+                    new PointF(x + width * 0.7f, y + (height - bodyHeight) / 2f + bodyHeight),
+                    new PointF(x + width, y + height / 2f)
+                };
+
+                g.FillPolygon(fill, arrowHead);
+                g.DrawPolygon(pen, arrowHead);
+            }
+        }
+    }
+}
