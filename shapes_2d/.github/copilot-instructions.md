@@ -1,8 +1,9 @@
 # Copilot Instructions
 
 ## General Guidelines
-- El usuario prefiere que no se use escalado (scale) al dibujar figuras; quiere que el tamaño dependa directamente del valor ingresado para poder hacerlo más grande o más pequeño. 
-- En el x,y en las coordenadas, se necesita exactamente las coordenadas en x = 700 en y = 150.
+- No usar escalado (scale) al dibujar figuras; el tamaño debe depender directamente del valor ingresado.
+- Usar exactamente las coordenadas x = 700 y = 150.
 
 ## Naming Conventions
-- El usuario usará nombres de controles con prefijos `Txt` y `Lbl` (por ejemplo `TxtRadio1`, `LblRadio1`) y espera que el código respete esos nombres.
+- Usar lower camel case para nombres de controles, con prefijos `lbl` y `txt` para labels y textboxes.
+- Respetar los nombres de controles en el código; por ejemplo: `lblRadio1`, `txtRadio1`.

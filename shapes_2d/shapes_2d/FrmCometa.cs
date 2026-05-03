@@ -17,13 +17,13 @@ namespace shapes_2d
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            if (!double.TryParse(TxtAncho.Text, out ancho) || ancho <= 0)
+            if (!double.TryParse(txtAncho.Text, out ancho) || ancho <= 0)
             {
                 MessageBox.Show("Ancho (A) debe ser un número válido mayor a 0");
                 return;
             }
 
-            if (!double.TryParse(TxtLargo.Text, out largo) || largo <= 0)
+            if (!double.TryParse(txtLargo.Text, out largo) || largo <= 0)
             {
                 MessageBox.Show("Largo (B) debe ser un número válido mayor a 0");
                 return;
@@ -35,18 +35,18 @@ namespace shapes_2d
             double perimetro = 4 * side;
             double area = (ancho * largo) / 2d;
 
-            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
-            LblArea.Text = $"Área: {area:F2}";
+            lblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            lblArea.Text = $"Área: {area:F2}";
 
             this.Invalidate();
         }
 
         private void BtnResetear_Click(object sender, EventArgs e)
         {
-            TxtAncho.Text = "";
-            TxtLargo.Text = "";
-            LblPerimetro.Text = "Perimetro:";
-            LblArea.Text = "Área:";
+            txtAncho.Text = "";
+            txtLargo.Text = "";
+            lblPerimetro.Text = "Perimetro:";
+            lblArea.Text = "Área:";
             ancho = 0;
             largo = 0;
             this.Invalidate();

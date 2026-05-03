@@ -18,19 +18,19 @@ namespace shapes_2d
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            if (!double.TryParse(TxtAncho.Text, out ancho) || ancho <= 0)
+            if (!double.TryParse(txtAncho.Text, out ancho) || ancho <= 0)
             {
                 MessageBox.Show("Ancho (a) debe ser un número válido mayor a 0");
                 return;
             }
 
-            if (!double.TryParse(TxtLargo.Text, out altura) || altura <= 0)
+            if (!double.TryParse(txtLargo.Text, out altura) || altura <= 0)
             {
                 MessageBox.Show("Altura (b) debe ser un número válido mayor a 0");
                 return;
             }
 
-            if (!double.TryParse(TxtInclinacion.Text, out inclinacion) || inclinacion <= 0)
+            if (!double.TryParse(txtInclinacion.Text, out inclinacion) || inclinacion <= 0)
             {
                 MessageBox.Show("Inclinación debe ser un número válido mayor a 0");
                 return;
@@ -40,19 +40,19 @@ namespace shapes_2d
             double perimetro = 2 * (ancho + lado);
             double area = ancho * altura;
 
-            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
-            LblArea.Text = $"Área: {area:F2}";
+            lblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            lblArea.Text = $"Área: {area:F2}";
 
             this.Invalidate();
         }
 
         private void BtnResetear_Click(object sender, EventArgs e)
         {
-            TxtAncho.Text = "";
-            TxtLargo.Text = "";
-            TxtInclinacion.Text = "";
-            LblPerimetro.Text = "Perimetro:";
-            LblArea.Text = "Área:";
+            txtAncho.Text = "";
+            txtLargo.Text = "";
+            txtInclinacion.Text = "";
+            lblPerimetro.Text = "Perimetro:";
+            lblArea.Text = "Área:";
             ancho = 0;
             altura = 0;
             inclinacion = 0;

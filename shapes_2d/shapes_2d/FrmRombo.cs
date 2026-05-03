@@ -16,7 +16,7 @@ namespace shapes_2d
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            if (!double.TryParse(TxtAncho.Text, out ancho) || ancho <= 0)
+            if (!double.TryParse(txtAncho.Text, out ancho) || ancho <= 0)
             {
                 MessageBox.Show("Ancho (a) debe ser un número válido mayor a 0");
                 return;
@@ -25,17 +25,17 @@ namespace shapes_2d
             double perimetro = 4 * ancho;
             double area = ancho * ancho;
 
-            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
-            LblArea.Text = $"Área: {area:F2}";
+            lblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            lblArea.Text = $"Área: {area:F2}";
 
             this.Invalidate();
         }
 
         private void BtnResetear_Click(object sender, EventArgs e)
         {
-            TxtAncho.Text = "";
-            LblPerimetro.Text = "Perimetro:";
-            LblArea.Text = "Área:";
+            txtAncho.Text = "";
+            lblPerimetro.Text = "Perimetro:";
+            lblArea.Text = "Área:";
             ancho = 0;
             this.Invalidate();
         }

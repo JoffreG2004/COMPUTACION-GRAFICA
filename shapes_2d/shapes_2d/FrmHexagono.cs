@@ -18,13 +18,13 @@ namespace shapes_2d
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            if (!double.TryParse(TxtAncho.Text, out lado) || lado <= 0)
+            if (!double.TryParse(txtAncho.Text, out lado) || lado <= 0)
             {
                 MessageBox.Show("Lado (a) debe ser un número válido mayor a 0");
                 return;
             }
 
-            if (!int.TryParse(TxtNumLados.Text, out numLados) || numLados < 3)
+            if (!int.TryParse(txtNumLados.Text, out numLados) || numLados < 3)
             {
                 MessageBox.Show("Numero de lados (b) debe ser un entero mayor o igual a 3");
                 return;
@@ -33,18 +33,18 @@ namespace shapes_2d
             double perimetro = lado * numLados;
             double area = (numLados * lado * lado) / (4 * Math.Tan(Math.PI / numLados));
 
-            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
-            LblArea.Text = $"Área: {area:F2}";
+            lblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            lblArea.Text = $"Área: {area:F2}";
 
             this.Invalidate();
         }
 
         private void BtnResetear_Click(object sender, EventArgs e)
         {
-            TxtAncho.Text = "";
-            TxtNumLados.Text = "";
-            LblPerimetro.Text = "Perímetro:";
-            LblArea.Text = "Área:";
+            txtAncho.Text = "";
+            txtNumLados.Text = "";
+            lblPerimetro.Text = "Perímetro:";
+            lblArea.Text = "Área:";
             lado = 0;
             numLados = 0;
             this.Invalidate();

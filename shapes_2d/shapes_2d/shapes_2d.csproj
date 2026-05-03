@@ -187,6 +187,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmCruz.resx">
       <DependentUpon>FrmCruz.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmElipse.resx">
       <DependentUpon>FrmElipse.cs</DependentUpon>
@@ -214,6 +215,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPastel.resx">
       <DependentUpon>FrmPastel.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTrapecio.resx">
       <DependentUpon>FrmTrapecio.cs</DependentUpon>

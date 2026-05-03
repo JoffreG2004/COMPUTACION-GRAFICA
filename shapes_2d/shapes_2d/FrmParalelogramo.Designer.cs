@@ -28,55 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LblArea = new System.Windows.Forms.Label();
-            this.LblPerimetro = new System.Windows.Forms.Label();
-            this.LblSalida = new System.Windows.Forms.Label();
+            this.lblArea = new System.Windows.Forms.Label();
+            this.lblPerimetro = new System.Windows.Forms.Label();
+            this.lblSalida = new System.Windows.Forms.Label();
             this.BtnResetear = new System.Windows.Forms.Button();
             this.BtnSalir = new System.Windows.Forms.Button();
             this.BtnCalcular = new System.Windows.Forms.Button();
-            this.LblProceso = new System.Windows.Forms.Label();
-            this.LblGrafico = new System.Windows.Forms.Label();
-            this.TxtLargo = new System.Windows.Forms.TextBox();
-            this.TxtAncho = new System.Windows.Forms.TextBox();
-            this.TxtInclinacion = new System.Windows.Forms.TextBox();
-            this.LblLargo = new System.Windows.Forms.Label();
-            this.LblAncho = new System.Windows.Forms.Label();
-            this.LblInclinacion = new System.Windows.Forms.Label();
-            this.LblEntrada = new System.Windows.Forms.Label();
+            this.lblProceso = new System.Windows.Forms.Label();
+            this.lblGrafico = new System.Windows.Forms.Label();
+            this.txtLargo = new System.Windows.Forms.TextBox();
+            this.txtAncho = new System.Windows.Forms.TextBox();
+            this.txtInclinacion = new System.Windows.Forms.TextBox();
+            this.lblLargo = new System.Windows.Forms.Label();
+            this.lblAncho = new System.Windows.Forms.Label();
+            this.lblInclinacion = new System.Windows.Forms.Label();
+            this.lblEntrada = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // LblArea
+            // lblArea
             // 
-            this.LblArea.AutoSize = true;
-            this.LblArea.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.LblArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(150)))));
-            this.LblArea.Location = new System.Drawing.Point(79, 382);
-            this.LblArea.Name = "LblArea";
-            this.LblArea.Size = new System.Drawing.Size(40, 19);
-            this.LblArea.TabIndex = 25;
-            this.LblArea.Text = "Área:";
+            this.lblArea.AutoSize = true;
+            this.lblArea.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(150)))));
+            this.lblArea.Location = new System.Drawing.Point(79, 382);
+            this.lblArea.Name = "lblArea";
+            this.lblArea.Size = new System.Drawing.Size(40, 19);
+            this.lblArea.TabIndex = 25;
+            this.lblArea.Text = "Área:";
             // 
-            // LblPerimetro
+            // lblPerimetro
             // 
-            this.LblPerimetro.AutoSize = true;
-            this.LblPerimetro.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.LblPerimetro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(150)))));
-            this.LblPerimetro.Location = new System.Drawing.Point(79, 342);
-            this.LblPerimetro.Name = "LblPerimetro";
-            this.LblPerimetro.Size = new System.Drawing.Size(73, 19);
-            this.LblPerimetro.TabIndex = 24;
-            this.LblPerimetro.Text = "Perimetro:";
-            this.LblPerimetro.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lblPerimetro.AutoSize = true;
+            this.lblPerimetro.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
+            this.lblPerimetro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(150)))));
+            this.lblPerimetro.Location = new System.Drawing.Point(79, 342);
+            this.lblPerimetro.Name = "lblPerimetro";
+            this.lblPerimetro.Size = new System.Drawing.Size(73, 19);
+            this.lblPerimetro.TabIndex = 24;
+            this.lblPerimetro.Text = "Perimetro:";
+            this.lblPerimetro.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // LblSalida
+            // lblSalida
             // 
-            this.LblSalida.AutoSize = true;
-            this.LblSalida.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.LblSalida.Location = new System.Drawing.Point(79, 308);
-            this.LblSalida.Name = "LblSalida";
-            this.LblSalida.Size = new System.Drawing.Size(60, 20);
-            this.LblSalida.TabIndex = 23;
-            this.LblSalida.Text = "Salidas:";
+            this.lblSalida.AutoSize = true;
+            this.lblSalida.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.lblSalida.Location = new System.Drawing.Point(79, 308);
+            this.lblSalida.Name = "lblSalida";
+            this.lblSalida.Size = new System.Drawing.Size(60, 20);
+            this.lblSalida.TabIndex = 23;
+            this.lblSalida.Text = "Salidas:";
             // 
             // BtnResetear
             // 
@@ -119,89 +119,89 @@
             this.BtnCalcular.UseVisualStyleBackColor = true;
             this.BtnCalcular.Click += new System.EventHandler(this.BtnCalcular_Click);
             // 
-            // LblProceso
+            // lblProceso
             // 
-            this.LblProceso.AutoSize = true;
-            this.LblProceso.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.LblProceso.Location = new System.Drawing.Point(79, 208);
-            this.LblProceso.Name = "LblProceso";
-            this.LblProceso.Size = new System.Drawing.Size(67, 20);
-            this.LblProceso.TabIndex = 19;
-            this.LblProceso.Text = "Proceso:";
+            this.lblProceso.AutoSize = true;
+            this.lblProceso.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.lblProceso.Location = new System.Drawing.Point(79, 208);
+            this.lblProceso.Name = "lblProceso";
+            this.lblProceso.Size = new System.Drawing.Size(67, 20);
+            this.lblProceso.TabIndex = 19;
+            this.lblProceso.Text = "Proceso:";
             // 
-            // LblGrafico
+            // lblGrafico
             // 
-            this.LblGrafico.AutoSize = true;
-            this.LblGrafico.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.LblGrafico.Location = new System.Drawing.Point(659, 50);
-            this.LblGrafico.Name = "LblGrafico";
-            this.LblGrafico.Size = new System.Drawing.Size(62, 20);
-            this.LblGrafico.TabIndex = 18;
-            this.LblGrafico.Text = "Gráfico:";
+            this.lblGrafico.AutoSize = true;
+            this.lblGrafico.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.lblGrafico.Location = new System.Drawing.Point(659, 50);
+            this.lblGrafico.Name = "lblGrafico";
+            this.lblGrafico.Size = new System.Drawing.Size(62, 20);
+            this.lblGrafico.TabIndex = 18;
+            this.lblGrafico.Text = "Gráfico:";
             // 
-            // TxtLargo
+            // txtLargo
             // 
-            this.TxtLargo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtLargo.Location = new System.Drawing.Point(179, 122);
-            this.TxtLargo.Name = "TxtLargo";
-            this.TxtLargo.Size = new System.Drawing.Size(140, 25);
-            this.TxtLargo.TabIndex = 17;
+            this.txtLargo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtLargo.Location = new System.Drawing.Point(179, 122);
+            this.txtLargo.Name = "txtLargo";
+            this.txtLargo.Size = new System.Drawing.Size(140, 25);
+            this.txtLargo.TabIndex = 17;
             // 
-            // TxtAncho
+            // txtAncho
             // 
-            this.TxtAncho.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtAncho.Location = new System.Drawing.Point(179, 83);
-            this.TxtAncho.Name = "TxtAncho";
-            this.TxtAncho.Size = new System.Drawing.Size(140, 25);
-            this.TxtAncho.TabIndex = 16;
+            this.txtAncho.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtAncho.Location = new System.Drawing.Point(179, 83);
+            this.txtAncho.Name = "txtAncho";
+            this.txtAncho.Size = new System.Drawing.Size(140, 25);
+            this.txtAncho.TabIndex = 16;
             // 
-            // TxtInclinacion
+            // txtInclinacion
             // 
-            this.TxtInclinacion.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TxtInclinacion.Location = new System.Drawing.Point(179, 162);
-            this.TxtInclinacion.Name = "TxtInclinacion";
-            this.TxtInclinacion.Size = new System.Drawing.Size(140, 25);
-            this.TxtInclinacion.TabIndex = 18;
+            this.txtInclinacion.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtInclinacion.Location = new System.Drawing.Point(179, 162);
+            this.txtInclinacion.Name = "txtInclinacion";
+            this.txtInclinacion.Size = new System.Drawing.Size(140, 25);
+            this.txtInclinacion.TabIndex = 18;
             // 
-            // LblLargo
+            // lblLargo
             // 
-            this.LblLargo.AutoSize = true;
-            this.LblLargo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.LblLargo.Location = new System.Drawing.Point(79, 125);
-            this.LblLargo.Name = "LblLargo";
-            this.LblLargo.Size = new System.Drawing.Size(67, 19);
-            this.LblLargo.TabIndex = 15;
-            this.LblLargo.Text = "Altura (b):";
+            this.lblLargo.AutoSize = true;
+            this.lblLargo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblLargo.Location = new System.Drawing.Point(79, 125);
+            this.lblLargo.Name = "lblLargo";
+            this.lblLargo.Size = new System.Drawing.Size(67, 19);
+            this.lblLargo.TabIndex = 15;
+            this.lblLargo.Text = "Altura (b):";
             // 
-            // LblAncho
+            // lblAncho
             // 
-            this.LblAncho.AutoSize = true;
-            this.LblAncho.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.LblAncho.Location = new System.Drawing.Point(79, 82);
-            this.LblAncho.Name = "LblAncho";
-            this.LblAncho.Size = new System.Drawing.Size(70, 19);
-            this.LblAncho.TabIndex = 14;
-            this.LblAncho.Text = "Ancho (a):";
+            this.lblAncho.AutoSize = true;
+            this.lblAncho.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblAncho.Location = new System.Drawing.Point(79, 82);
+            this.lblAncho.Name = "lblAncho";
+            this.lblAncho.Size = new System.Drawing.Size(70, 19);
+            this.lblAncho.TabIndex = 14;
+            this.lblAncho.Text = "Ancho (a):";
             // 
-            // LblInclinacion
+            // lblInclinacion
             // 
-            this.LblInclinacion.AutoSize = true;
-            this.LblInclinacion.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.LblInclinacion.Location = new System.Drawing.Point(79, 165);
-            this.LblInclinacion.Name = "LblInclinacion";
-            this.LblInclinacion.Size = new System.Drawing.Size(87, 19);
-            this.LblInclinacion.TabIndex = 18;
-            this.LblInclinacion.Text = "Inclinación:";
+            this.lblInclinacion.AutoSize = true;
+            this.lblInclinacion.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblInclinacion.Location = new System.Drawing.Point(79, 165);
+            this.lblInclinacion.Name = "lblInclinacion";
+            this.lblInclinacion.Size = new System.Drawing.Size(87, 19);
+            this.lblInclinacion.TabIndex = 18;
+            this.lblInclinacion.Text = "Inclinación:";
             // 
-            // LblEntrada
+            // lblEntrada
             // 
-            this.LblEntrada.AutoSize = true;
-            this.LblEntrada.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
-            this.LblEntrada.Location = new System.Drawing.Point(79, 50);
-            this.LblEntrada.Name = "LblEntrada";
-            this.LblEntrada.Size = new System.Drawing.Size(66, 20);
-            this.LblEntrada.TabIndex = 13;
-            this.LblEntrada.Text = "Entrada:";
+            this.lblEntrada.AutoSize = true;
+            this.lblEntrada.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
+            this.lblEntrada.Location = new System.Drawing.Point(79, 50);
+            this.lblEntrada.Name = "lblEntrada";
+            this.lblEntrada.Size = new System.Drawing.Size(66, 20);
+            this.lblEntrada.TabIndex = 13;
+            this.lblEntrada.Text = "Entrada:";
             // 
             // FrmParalelogramo
             // 
@@ -212,21 +212,21 @@
             this.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Controls.Add(this.LblArea);
-            this.Controls.Add(this.LblPerimetro);
-            this.Controls.Add(this.LblSalida);
+            this.Controls.Add(this.lblArea);
+            this.Controls.Add(this.lblPerimetro);
+            this.Controls.Add(this.lblSalida);
             this.Controls.Add(this.BtnResetear);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnCalcular);
-            this.Controls.Add(this.LblProceso);
-            this.Controls.Add(this.LblGrafico);
-            this.Controls.Add(this.TxtInclinacion);
-            this.Controls.Add(this.TxtLargo);
-            this.Controls.Add(this.TxtAncho);
-            this.Controls.Add(this.LblLargo);
-            this.Controls.Add(this.LblAncho);
-            this.Controls.Add(this.LblInclinacion);
-            this.Controls.Add(this.LblEntrada);
+            this.Controls.Add(this.lblProceso);
+            this.Controls.Add(this.lblGrafico);
+            this.Controls.Add(this.txtInclinacion);
+            this.Controls.Add(this.txtLargo);
+            this.Controls.Add(this.txtAncho);
+            this.Controls.Add(this.lblLargo);
+            this.Controls.Add(this.lblAncho);
+            this.Controls.Add(this.lblInclinacion);
+            this.Controls.Add(this.lblEntrada);
             this.Name = "FrmParalelogramo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paralelogramo";
@@ -238,20 +238,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Label LblArea;
-        private System.Windows.Forms.Label LblPerimetro;
-        private System.Windows.Forms.Label LblSalida;
+        private System.Windows.Forms.Label lblArea;
+        private System.Windows.Forms.Label lblPerimetro;
+        private System.Windows.Forms.Label lblSalida;
         private System.Windows.Forms.Button BtnResetear;
         private System.Windows.Forms.Button BtnSalir;
         private System.Windows.Forms.Button BtnCalcular;
-        private System.Windows.Forms.Label LblProceso;
-        private System.Windows.Forms.Label LblGrafico;
-        private System.Windows.Forms.TextBox TxtLargo;
-        private System.Windows.Forms.TextBox TxtAncho;
-        private System.Windows.Forms.TextBox TxtInclinacion;
-        private System.Windows.Forms.Label LblLargo;
-        private System.Windows.Forms.Label LblAncho;
-        private System.Windows.Forms.Label LblInclinacion;
-        private System.Windows.Forms.Label LblEntrada;
+        private System.Windows.Forms.Label lblProceso;
+        private System.Windows.Forms.Label lblGrafico;
+        private System.Windows.Forms.TextBox txtLargo;
+        private System.Windows.Forms.TextBox txtAncho;
+        private System.Windows.Forms.TextBox txtInclinacion;
+        private System.Windows.Forms.Label lblLargo;
+        private System.Windows.Forms.Label lblAncho;
+        private System.Windows.Forms.Label lblInclinacion;
+        private System.Windows.Forms.Label lblEntrada;
     }
 }

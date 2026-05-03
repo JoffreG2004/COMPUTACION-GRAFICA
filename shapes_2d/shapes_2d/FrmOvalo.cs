@@ -17,7 +17,7 @@ namespace shapes_2d
 
         private void BtnCalcular_Click(object sender, EventArgs e)
         {
-            if (!double.TryParse(TxtRadio1.Text, out radio1) || radio1 <= 0)
+            if (!double.TryParse(txtRadio1.Text, out radio1) || radio1 <= 0)
             {
                 MessageBox.Show("Tamaño (a) debe ser un número válido mayor a 0");
                 return;
@@ -32,17 +32,17 @@ namespace shapes_2d
             double perimetro = Math.PI * (3 * (a + b) - Math.Sqrt((3 * a + b) * (a + 3 * b)));
             double area = Math.PI * a * b;
 
-            LblPerimetro.Text = $"Perímetro: {perimetro:F2}";
-            LblArea.Text = $"Área: {area:F2}";
+            lblPerimetro.Text = $"Perímetro: {perimetro:F2}";
+            lblArea.Text = $"Área: {area:F2}";
 
             this.Invalidate();
         }
 
         private void BtnResetear_Click(object sender, EventArgs e)
         {
-            TxtRadio1.Text = "";
-            LblPerimetro.Text = "Perímetro:";
-            LblArea.Text = "Área:";
+            txtRadio1.Text = "";
+            lblPerimetro.Text = "Perímetro:";
+            lblArea.Text = "Área:";
             radio1 = 0;
             this.Invalidate();
         }
