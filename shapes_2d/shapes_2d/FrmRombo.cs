@@ -58,12 +58,20 @@ namespace shapes_2d
             using (Pen pen = new Pen(Color.Black, 2))
             using (Brush fill = new SolidBrush(Color.FromArgb(180, Color.DodgerBlue)))
             {
-                float side = (float)ancho * 10f;
+                float halfDiagonal = (float)ancho*7 ;
                 float x = 700f;
                 float y = 150f;
 
-                g.FillRectangle(fill, x, y, side, side);
-                g.DrawRectangle(pen, x, y, side, side);
+                PointF[] points =
+                {
+                    new PointF(x, y - halfDiagonal),
+                    new PointF(x + halfDiagonal, y),
+                    new PointF(x, y + halfDiagonal),
+                    new PointF(x - halfDiagonal, y)
+                };
+
+                g.FillPolygon(fill, points);
+                g.DrawPolygon(pen, points);
             }
         }
     }

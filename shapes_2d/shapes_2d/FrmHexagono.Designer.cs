@@ -51,7 +51,7 @@
             this.lblArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(150)))));
             this.lblArea.Location = new System.Drawing.Point(71, 380);
             this.lblArea.Name = "lblArea";
-            this.lblArea.Size = new System.Drawing.Size(40, 19);
+            this.lblArea.Size = new System.Drawing.Size(49, 23);
             this.lblArea.TabIndex = 25;
             this.lblArea.Text = "Área:";
             // 
@@ -62,7 +62,7 @@
             this.lblPerimetro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(95)))), ((int)(((byte)(150)))));
             this.lblPerimetro.Location = new System.Drawing.Point(71, 340);
             this.lblPerimetro.Name = "lblPerimetro";
-            this.lblPerimetro.Size = new System.Drawing.Size(73, 19);
+            this.lblPerimetro.Size = new System.Drawing.Size(88, 23);
             this.lblPerimetro.TabIndex = 24;
             this.lblPerimetro.Text = "Perimetro:";
             this.lblPerimetro.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -73,7 +73,7 @@
             this.lblSalida.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.lblSalida.Location = new System.Drawing.Point(71, 306);
             this.lblSalida.Name = "lblSalida";
-            this.lblSalida.Size = new System.Drawing.Size(60, 20);
+            this.lblSalida.Size = new System.Drawing.Size(76, 25);
             this.lblSalida.TabIndex = 23;
             this.lblSalida.Text = "Salidas:";
             // 
@@ -124,7 +124,7 @@
             this.lblProceso.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.lblProceso.Location = new System.Drawing.Point(71, 206);
             this.lblProceso.Name = "lblProceso";
-            this.lblProceso.Size = new System.Drawing.Size(67, 20);
+            this.lblProceso.Size = new System.Drawing.Size(84, 25);
             this.lblProceso.TabIndex = 19;
             this.lblProceso.Text = "Proceso:";
             // 
@@ -134,7 +134,7 @@
             this.lblGrafico.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.lblGrafico.Location = new System.Drawing.Point(651, 48);
             this.lblGrafico.Name = "lblGrafico";
-            this.lblGrafico.Size = new System.Drawing.Size(62, 20);
+            this.lblGrafico.Size = new System.Drawing.Size(79, 25);
             this.lblGrafico.TabIndex = 18;
             this.lblGrafico.Text = "Gráfico:";
             // 
@@ -143,7 +143,7 @@
             this.txtAncho.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtAncho.Location = new System.Drawing.Point(222, 80);
             this.txtAncho.Name = "txtAncho";
-            this.txtAncho.Size = new System.Drawing.Size(140, 25);
+            this.txtAncho.Size = new System.Drawing.Size(140, 30);
             this.txtAncho.TabIndex = 16;
             // 
             // lblLargo
@@ -152,7 +152,7 @@
             this.lblLargo.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblLargo.Location = new System.Drawing.Point(71, 123);
             this.lblLargo.Name = "lblLargo";
-            this.lblLargo.Size = new System.Drawing.Size(0, 19);
+            this.lblLargo.Size = new System.Drawing.Size(0, 23);
             this.lblLargo.TabIndex = 15;
             this.lblLargo.Visible = false;
             // 
@@ -162,9 +162,9 @@
             this.lblAncho.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblAncho.Location = new System.Drawing.Point(71, 80);
             this.lblAncho.Name = "lblAncho";
-            this.lblAncho.Size = new System.Drawing.Size(61, 19);
+            this.lblAncho.Size = new System.Drawing.Size(98, 23);
             this.lblAncho.TabIndex = 14;
-            this.lblAncho.Text = "Lado (a):";
+            this.lblAncho.Text = "Tamaño (a):";
             // 
             // lblEntrada
             // 
@@ -172,7 +172,7 @@
             this.lblEntrada.Font = new System.Drawing.Font("Segoe UI Semibold", 11F, System.Drawing.FontStyle.Bold);
             this.lblEntrada.Location = new System.Drawing.Point(71, 48);
             this.lblEntrada.Name = "lblEntrada";
-            this.lblEntrada.Size = new System.Drawing.Size(66, 20);
+            this.lblEntrada.Size = new System.Drawing.Size(83, 25);
             this.lblEntrada.TabIndex = 13;
             this.lblEntrada.Text = "Entrada:";
             // 
@@ -181,7 +181,7 @@
             this.txtNumLados.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtNumLados.Location = new System.Drawing.Point(222, 120);
             this.txtNumLados.Name = "txtNumLados";
-            this.txtNumLados.Size = new System.Drawing.Size(140, 25);
+            this.txtNumLados.Size = new System.Drawing.Size(140, 30);
             this.txtNumLados.TabIndex = 27;
             // 
             // lblNumLados
@@ -190,13 +190,13 @@
             this.lblNumLados.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.lblNumLados.Location = new System.Drawing.Point(70, 123);
             this.lblNumLados.Name = "lblNumLados";
-            this.lblNumLados.Size = new System.Drawing.Size(137, 19);
+            this.lblNumLados.Size = new System.Drawing.Size(171, 23);
             this.lblNumLados.TabIndex = 26;
             this.lblNumLados.Text = "Numero de lados (b):";
             // 
             // FrmPoligonos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ClientSize = new System.Drawing.Size(1280, 720);

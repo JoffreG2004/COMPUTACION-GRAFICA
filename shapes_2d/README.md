@@ -75,168 +75,48 @@ Elipse con proporciones definidas por los dos radios. Color: `MediumPurple` (128
 
 ---
 
-## 2. Cuadriláteros (3)
+## 2) Cuadriláteros (3)
+### `FrmParalelogramo`
+- **Entradas:** `TxtAncho`, `TxtLargo` (altura), `TxtInclinacion`.
+- **Cálculos:**
+  - Área = `ancho * altura`
+  - Perímetro = `2 * (ancho + lado)` con `lado = √(altura² + inclinación²)`
+- **Dibujo:** paralelogramo en `x=700`, `y=150`, color amarillo oscuro.
 
-### 2.1 Paralelogramo (`FrmParalelogramo.cs`)
+### `FrmRombo`
+- **Entrada:** `TxtAncho` (lado).
+- **Cálculos:**
+  - Perímetro = `4a`
+  - Área = `a²`
+- **Dibujo:** cuadrado (rombo) en `x=700`, `y=150`, color azul.
 
-#### Desarrollo Técnico
-- **Entradas:** Ancho, Altura/Largo, Inclinación
-- **Validación:** Todos los valores deben ser positivos
-- **Construcción:** 4 puntos ordenados para crear el polígono inclinado
+### `FrmCometa`
+- **Entradas:** `TxtAncho` y `TxtLargo` (A y B).
+- **Cálculos:**
+  - Área = `(A * B) / 2`
+  - Perímetro = `4 * √((A/2)² + (B/2)²)`
+- **Dibujo:** cometa en `x=700`, `y=150`, color morado.
 
-#### Implementación Técnica
+## 3) Polígonos Regulares (1 formulario)
+### `FrmHexagono` (polígonos regulares)
+- **Entradas:** `TxtAncho` (lado) y `TxtNumLados` (n ≥ 3).
+- **Cálculos:**
+  - Perímetro = `n * lado`
+  - Área = `(n * lado²) / (4 * tan(π/n))`
+- **Dibujo:** polígono regular con `n` lados, en `x=700`, `y=150`, sin `scale`.
 
-**Cálculos:**
-- lado = √(altura² + inclinación²)
-- Perímetro = 2(ancho + lado)
-- Área = ancho × altura
+## 4) Figuras Irregulares (3)
+### `FrmEstrella`
+- **Entrada:** `TxtTamaño` / `LblTamaño`.
+- **Cálculos:** perímetro y área aproximados a partir de los 10 puntos de la estrella.
+- **Dibujo:** estrella celeste en `x=700`, `y=150`.
 
-**Código:** `Graphics.FillPolygon()` con 4 vértices calculados por offset
+### `FrmCorazon`
+- **Entrada:** `TxtTamaño` / `LblTamaño`.
+- **Cálculos:** aproximados.
+- **Dibujo:** corazón con curva paramétrica, color rojo, en `x=700`, `y=150`.
 
-**Resultados:**
-Paralelogramo inclinado correctamente escalado. Color: `Goldenrod` (180 alpha).
-
----
-
-### 2.2 Rombo (`FrmRombo.cs`)
-
-#### Desarrollo Técnico
-- **Entrada:** Lado (`TxtAncho`)
-- **Nota:** Implementado como cuadrado perfecto
-- **Escala:** lado × 10 píxeles
-
-#### Implementación Técnica
-
-**Cálculos:**
-- Perímetro = 4a
-- Área = a²
-
-**Código:** `Graphics.FillRectangle()` con dimensiones iguales
-
-**Resultados:**
-Cuadrado perfecto. Color: `DodgerBlue` (180 alpha).
-
----
-
-### 2.3 Cometa (`FrmCometa.cs`)
-
-#### Desarrollo Técnico
-- **Entradas:** Ancho (eje A), Largo (eje B)
-- **Forma:** Cuadrilátero con vértices en extremos de diagonales perpendiculares
-
-#### Implementación Técnica
-
-**Cálculos:**
-- lado = √((A/2)² + (B/2)²)
-- Perímetro = 4 × lado
-- Área = (A × B) / 2
-
-**Código:** `Graphics.FillPolygon()` con 4 vértices centrados
-
-**Resultados:**
-Forma de cometa con diagonales perfectamente centradas. Color: `MediumPurple` (180 alpha).
-
----
-
-## 3. Polígonos Regulares (1)
-
-### 3.1 Polígonos Regulares (`FrmPoligonos.cs`)
-
-#### Desarrollo Técnico
-- **Entradas:** Lado, Número de lados (n ≥ 3)
-- **Algoritmo:** Cálculo de vértices usando trigonometría circular
-- **Centro:** (700, 150)
-- **Ángulo inicial:** -90° para que el primer vértice apunte hacia arriba
-
-#### Implementación Técnica
-
-**Cálculos:**
-- Perímetro = n × lado
-- Área = (n × lado²) / (4 × tan(π/n))
-
-**Código:** Bucle que calcula cada vértice usando ángulos equidistantes
-
-**Resultados:**
-Polígono regular perfecto con n lados. Color: `SandyBrown` (180 alpha).
-
----
-
-## 4. Figuras Irregulares (3)
-
-### 4.1 Estrella (`FrmEstrella.cs`)
-
-#### Desarrollo Técnico
-- **Entrada:** Tamaño
-- **Puntos:** 10 vértices (5 puntas)
-- **Radios:** Exterior = tamaño × 10, Interior = tamaño × 5
-
-#### Implementación Técnica
-
-**Cálculos:**
-- Área: Fórmula del Shoelace (suma de productos cruzados)
-- Perímetro: Suma de distancias entre vértices consecutivos
-
-**Código:** 10 puntos alternando radios, ángulo de 36° entre cada punto
-
-**Resultados:**
-Estrella de 5 puntas simétrica. Color: `SkyBlue` (180 alpha).
-
----
-
-### 4.2 Corazón (`FrmCorazon.cs`)
-
-#### Desarrollo Técnico
-- **Entrada:** Tamaño
-- **Método:** Curva paramétrica (Alcides Ribeiro)
-- **Puntos:** 360 (uno por grado)
-
-#### Implementación Técnica
-
-**Ecuaciones Paramétricas:**
-- x = 16 × sin³(t)
-- y = 13cos(t) - 5cos(2t) - 2cos(3t) - cos(4t)
-
-**Cálculos (Aproximados):**
-- Área ≈ πr² + 1.4r²
-- Perímetro ≈ 2πr + 2√(r² + (1.4r)²)
-
-**Código:** Loop de 0° a 360° generando puntos con transformaciones
-
-**Resultados:**
-Corazón suave y simétrico. Color: `Red` (200 alpha).
-
----
-
-### 4.3 Luna Creciente (`FrmLunaCreciente.cs`)
-
-#### Desarrollo Técnico
-- **Entrada:** Tamaño
-- **Método:** Diferencia de regiones (resta de círculos)
-- **Radios:** Exterior = tamaño × 10, Interior = tamaño × 6
-
-#### Implementación Técnica
-
-**Cálculos:**
-- Área = π(radio² - radioInterno²)
-- Perímetro = 2πradio + 2πradioInterno
-
-**Código:** Usa `GraphicsPath` y `Region` para operaciones booleanas
-
-**Resultados:**
-Luna creciente simétrica por sustracción de regiones. Color: `YellowGreen` (RGB 184,199,112).
-
----
-
-## 5. Arquitectura General
-
-Cada formulario hereda de `Form` y sigue un patrón consistente:
-1. Validación de entrada con `TryParse()`
-2. Cálculos matemáticos específicos
-3. Visualización mediante evento `Paint`
-4. Controles UI: Calcular, Resetear, Salir
-
----
-
-## 6. Conclusión
-
-El proyecto implementa 12 figuras geométricas con cálculos precisos y visualización de alta calidad usando técnicas avanzadas de GDI+.
+### `FrmLunaCreciente`
+- **Entrada:** `TxtTamaño` / `LblTamaño`.
+- **Cálculos:** diferencia de áreas entre círculos.
+- **Dibujo:** luna creciente amarilla oscura con recorte, en `x=700`, `y=150`.
